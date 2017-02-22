@@ -1,0 +1,107 @@
+* {
+	margin: 0 auto;
+}
+@font-face {
+  	font-family: "Myriad Pro";
+  	src: url(fonts\MyriadProBold\MyriadProBold.eot);
+  	src: url(fonts\MyriadProBold\MyriadProBold.ttf), url(fonts\MyriadProBold\MyriadProBold.woff), url(fonts\MyriadProBold\MyriadProBold.otf);
+  	font-weight: bold;
+  	font-style: normal;
+}
+/* BOX */
+.box {
+	margin: 3% 30% 30% 30%;
+}
+.header,
+.bio,
+.contacts {
+	border-bottom: 1px solid gray;
+}
+
+h3,
+.tel_number,
+a {
+	line-height: 50px;
+}
+/* HEADER */
+.header {
+	height: 330px;
+}
+
+h1 {
+	margin-bottom: 20px;
+  	font-family: Arial;
+  	font-size: 36px;
+  	font-weight: bold;
+  	text-transform: uppercase;
+  	text-align:center;
+}
+
+.photo {
+	text-align: center;
+	line-height: 80px;
+
+}
+
+img {
+  border: 1px solid gray;
+}
+
+.job_position {
+	padding-left: 0px;
+  	color: gray;
+  	font-family:Arial;
+  	font-size:14px;
+  	font-weight: normal;
+}
+/* BIO */
+.bio {
+	height: 125px;
+}
+
+h3 {
+	font-family: "Myriad Pro";
+  	font-size: 18px;
+  	font-weight: bold;
+}
+
+li {
+	color: black;
+}
+
+span {
+  	color: gray;
+	font-family:"Myriad Pro";
+  	font-size: 14px;
+  	font-weight: normal;
+}
+/* CONTACTS */
+.contacts {
+height: 165px;
+}
+
+.tel_number {
+  	padding-left: 35px;
+  	color: gray;
+	font-family: "Myriad Pro";
+  	font-size: 14px;
+  	font-weight: normal;
+  	line-height: 25px;
+}
+
+a {
+  	padding-left: 35px;
+	font-family: "Myriad Pro";
+  	font-size: 14px;
+  	font-weight: normal;
+  	font-style: italic;
+  	line-height: 25px;
+}
+/* FEEDBACK */
+.feedback {
+  	padding-left: 35px;
+  	color: gray;
+	font-family: "Myriad Pro";
+  	font-size: 14px;
+  	font-weight: normal;
+}
