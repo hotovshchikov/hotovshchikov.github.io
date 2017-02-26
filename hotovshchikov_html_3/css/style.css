@@ -10,7 +10,6 @@ a {
 
 .header,
 .sidebar,
-.main,
 .footer {
 	margin: 0px;
 	width: 1060px;
@@ -52,14 +51,14 @@ a {
 }
 
 .menu li {
-	width: 120px;
+	width: 130px;
 	line-height: 40px;
 	display: inline-block;
 	text-align: center;
 }
 
 .menu li:hover {
-	width: 120px;
+	width: 130px;
 	line-height: 40px;
 	display: inline-block;
 	text-align: center;
@@ -68,25 +67,23 @@ a {
 
 .menu a {
 	color: white;
+	font-size: 14.67px;
 	font-family: 'Open Sans', sans-serif;
 }
 
 /*  SIDEBAR  */
 
 .sidebar {
+	position: absolute;
 	width: 240px;
 	height: 240px;
 	display: block;
 }
 
-.sidebar ul {
-
-}
-
 .sidebar li {
 	height: 40px;
 	line-height: 40px;
-	padding-left: 20px;
+	padding-left: 25px;
 	text-align: left;
 	border: 1px solid #cccccc;
 }
@@ -94,13 +91,14 @@ a {
 .sidebar li:hover {
 	height: 40px;
 	line-height: 40px;
-	padding-left: 32px;
+	padding-left: 37px;
 	text-align: left;
 	border: 1px solid #cccccc;
 }
 
 .sidebar a {
 	color: gray;
+	font-size: 13.33px;
 	font-family: 'Open Sans', sans-serif;
 }
 
@@ -109,8 +107,65 @@ a {
 	font-family: 'Open Sans', sans-serif;
 }
 
-
-
-
 /*  MAIN  */
+
+.main {
+	position: relative;
+	padding-left: 333px;
+	padding-right: 46px;
+	width: 726px;
+}
+article {
+	width: 834px;
+}
+
+.img_bicycle {
+	margin-bottom: 40px;
+	border: 1px solid #cccccc;
+	height: 400px;
+}
+
+.imgCenter {
+	margin: 45px auto;
+	display: block;
+}
+
+.content {
+	margin-bottom: 65px;
+	padding-left: 30px;
+	line-height: 30px;
+	font-size: 13.33px;
+	font-family: 'Open Sans', sans-serif;
+}
+
 /*  FOOTER  */
+
+.footer {
+	margin-bottom: 60px;
+	height: 40px;
+	display: inline-block;
+	background: #cccccc;
+}
+
+/*.footer ul {
+	width: 1120px;
+  	list-style: none;
+  	overflow: hidden;
+}
+*/
+.footer li {
+	width: 170px;
+	line-height: 40px;
+	display: inline-block;
+	text-align: left;
+}
+
+.footer a {
+	color:black;
+	font-size: 13.33px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.footer a:hover {
+	text-decoration: underline;
+}
