@@ -91,14 +91,24 @@ height: 165px;
   	line-height: 25px;
 }
 
-a {
-  	padding-left: 35px;
-	font-family: "Myriad Pro";
-  	font-size: 14px;
-  	font-weight: normal;
-  	font-style: italic;
-  	line-height: 25px;
 }
+a {
+    padding-left: 35px;
+   font-family: "Myriad Pro";
+    font-size: 14px;
+    font-weight: normal;
+    font-style: italic;
+    line-height: 25px;
+}
+
+#link {
+  color: black;
+}
+a:hover {
+  background: #000;
+  color: red;
+
+
 /* FEEDBACK */
 .feedback {
   	padding-left: 35px;
