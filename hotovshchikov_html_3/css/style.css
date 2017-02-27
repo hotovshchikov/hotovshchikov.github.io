@@ -12,7 +12,7 @@ a {
 .sidebar,
 .footer {
 	margin: 0px;
-	width: 1060px;
+	width: 1119px;
 	padding: 0px 46px;
 }
 
@@ -25,7 +25,7 @@ a {
 .logo_box {
 	margin-top: 50px;
 	margin-bottom: 40px;
-	width: 1120px;
+	width: 1119px;
 	height: 40px;
 	float: left;
 }
@@ -37,7 +37,7 @@ a {
 	
 .menu {
 	margin-bottom: 40px;
-	width: 1120px;
+	width: 1119px;
 	height: 40px;
 	display: inline-block;
 	position: relative;
@@ -45,7 +45,7 @@ a {
 }
 
 .menu ul {
-	width: 1120px;
+	width: 1060px;
   	list-style: none;
   	overflow: hidden;
 }
