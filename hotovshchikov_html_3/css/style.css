@@ -1,14 +1,8 @@
-.left_right_margin {
-	display: block;
-	position: absolute;
-	margin: 0px 154px;
-	background-color: #f9f9f9;
-	box-shadow: 0px 2px 5px 0px grey;
-}
-
 .wrapper {
-	display: block;
+	width: 1060px;
+	margin: 0 auto;
 	background: #fff;
+	box-shadow: 0px 1px 13px -2px gray;
 }
 
 a {
@@ -16,10 +10,9 @@ a {
 }
 
 .header,
-.sidebar,
-.footer {
+.sidebar {
 	margin: 0px;
-	width: 1119px;
+	width: 968px;
 	padding: 0px 46px;
 }
 
@@ -32,9 +25,6 @@ a {
 .logo_box {
 	margin-top: 50px;
 	margin-bottom: 40px;
-	width: 1119px;
-	height: 40px;
-	float: left;
 }
 
 .logo {
@@ -43,37 +33,39 @@ a {
 }
 	
 .menu {
-	margin-bottom: 40px;
-	width: 1119px;
-	height: 40px;
-	display: inline-block;
-	position: relative;
+	/*margin-bottom: 40px;*/
+/*	height: 40px;*/
 	background: linear-gradient(to top, #454444, #5e5e5e);
 }
 
+html>body .menu li a {
+	width: auto;
+}
 .menu ul {
-	width: 1060px;
+	width: 968px;
   	list-style: none;
   	overflow: hidden;
 }
 
 .menu li {
-	width: 130px;
-	line-height: 40px;
 	display: inline-block;
-	text-align: center;
-}
-
-.menu li:hover {
-	width: 130px;
-	line-height: 40px;
-	display: inline-block;
-	text-align: center;
-	background: #333333;
 }
 
 .menu a {
+	display: inline-block;
+	padding: 15px 35px;
 	color: white;
+	font-size: 14.67px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.menu li a:hover {
+	display: inline-block;
+	padding: 15px 35px;
+	border-left: 1px solid #999;
+	border-right: 1px solid #999;
+	color: white;
+	background: #333;
 	font-size: 14.67px;
 	font-family: 'Open Sans', sans-serif;
 }
@@ -81,36 +73,44 @@ a {
 /*  SIDEBAR  */
 
 .sidebar {
-	display: block;
 	float: left;
 	width: 240px;
-	height: 240px;
 	display: block;
+}
+
+.sidebar ul {
+	border: 1px solid #cccccc;
 }
 
 .sidebar li {
-	height: 40px;
-	line-height: 40px;
-	padding-left: 25px;
-	text-align: left;
-	border: 1px solid #cccccc;
+	border-top: 1px solid #cccccc;
 }
 
-.sidebar li:hover {
-	height: 40px;
-	line-height: 40px;
-	padding-left: 37px;
-	text-align: left;
-	border: 1px solid #cccccc;
+.sidebar li:first-child {
+	border-top: none;
+}
+
+.sidebar li:last-child {
+	border-bottom: none;
+}
+
+html>body .sidebar li a {
+	width: auto;
 }
 
 .sidebar a {
+	display: block;
+	padding: 15px 25px;
+	width: 100%;
 	color: gray;
 	font-size: 13.33px;
 	font-family: 'Open Sans', sans-serif;
 }
 
-.sidebar li:hover a {
+.sidebar li a:hover {
+	display: block;
+	padding: 15px 35px;
+	font-size: 13.33px;
 	color: black;
 	font-family: 'Open Sans', sans-serif;
 }
@@ -120,11 +120,8 @@ a {
 .main {
 	display: block;
 	margin-left: 330px;
-	width: 835px;
-}
-
-article {
-	width: 835px;
+	margin-right: 46px;
+	width: auto;
 }
 
 .img_bicycle {
@@ -149,21 +146,28 @@ article {
 /*  FOOTER  */
 
 .footer {
-	width: 1030px;
 	margin: 40px 46px;
+	padding: 5px;
 	height: 40px;
-	display: inline-block;
 	background: #cccccc;
 }
 
+html>body .footer li a {
+	width: auto;
+}
+.footer ul {
+	width: 968px;
+  	list-style: none;
+  	overflow: hidden;
+}
+
 .footer li {
-	width: 168px;
-	line-height: 40px;
+	padding: 13px;
 	display: inline-block;
-	text-align: left;
 }
 
 .footer a {
+	padding: 15px 25px;
 	color: black;
 	font-size: 13.33px;
 	font-family: 'Open Sans', sans-serif;
@@ -171,4 +175,10 @@ article {
 
 .footer a:hover {
 	text-decoration: underline;
+}
+
+.footer ul li:last-child {
+	padding-left: 257px;
+	font-size: 13.33px;
+	font-family: 'Open Sans', sans-serif;
 }
