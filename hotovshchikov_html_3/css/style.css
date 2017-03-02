@@ -22,7 +22,24 @@ a {
 	height: 210px;
 }
 
-.logo_box {
+.logo {
+	padding-left: 0;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+/*h1>a {
+	display: block;
+	padding-left: 0;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	color: #333;
+	font-size: 50px;
+	font-weight: bold;
+	text-shadow: #000 0 0 1px;
+	font-family: 'Open Sans', sans-serif;*/
+}
+/*.logo_box {
 	padding-top: 50px;
 	padding-bottom: 40px;
 }
@@ -30,11 +47,8 @@ a {
 .logo {
 	margin: 0;
   	text-align: center;
-}
+}*/
 	
-.menu {
-	background: linear-gradient(to top, #454444, #5e5e5e);
-}
 
 html>body .menu li a {
 	width: auto;
@@ -43,6 +57,8 @@ html>body .menu li a {
 	width: 968px;
   	list-style: none;
   	overflow: hidden;
+  	background: linear-gradient(to top, #454444, #5e5e5e);
+
 }
 
 .menu li {
@@ -60,8 +76,8 @@ html>body .menu li a {
 .menu li a:hover {
 	display: inline-block;
 	padding: 15px 35px;
-	border-left: 1px solid #999;
-	border-right: 1px solid #999;
+	/*border-left: 1px solid #999;
+	border-right: 1px solid #999;*/
 	color: white;
 	background: #333;
 	font-size: 14.67px;
@@ -116,16 +132,15 @@ html>body .sidebar li a {
 /*  MAIN  */
 
 .main {
+	float: right;
 	display: block;
-	margin-left: 330px;
-	margin-right: 46px;
-	width: auto;
+	width: 682px;
+	padding-right: 46px;
 }
 
 .img_bicycle {
 	margin-bottom: 40px;
 	border: 1px solid #cccccc;
-	height: 400px;
 }
 
 .imgCenter {
@@ -144,14 +159,51 @@ html>body .sidebar li a {
 /*  FOOTER  */
 
 .footer {
-	display: inline-block;
+	/*display: inline-block;
 	width: 870px;
 	margin: 0 46px 60px 46px;
 	padding: 0px 48px;
-	background: #cccccc;
+	background: #cccccc;*/
+	display: inline-block;
+	padding: 46px;
+	background: #ccc;
 }
 
-html>body .footer li a {
+.footer ul {
+	float: left;
+	width: 777px;
+}
+
+.footer ul li {
+	display: inline-block;
+	padding: 10px;
+}
+
+.legal-info {
+	float: right;
+	padding: 11.5px 15px;
+	color: #000;
+	font-size: 13.33px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.clearfix::after {
+	display: block;
+	content: '';
+	clear: both;
+}
+
+.footer a {
+	padding: 15px 25px;
+	color: black;
+	font-size: 13.33px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.footer a:hover {
+	text-decoration: underline;
+}
+/*html>body .footer li a {
 	width: auto;
 }
 .footer ul {
@@ -180,4 +232,4 @@ html>body .footer li a {
 	padding-left: 200px;
 	font-size: 13.33px;
 	font-family: 'Open Sans', sans-serif;
-}
+}*/
