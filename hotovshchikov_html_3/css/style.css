@@ -58,7 +58,6 @@ html>body .menu li a {
   	list-style: none;
   	overflow: hidden;
   	background: linear-gradient(to top, #454444, #5e5e5e);
-
 }
 
 .menu li {
@@ -66,22 +65,18 @@ html>body .menu li a {
 }
 
 .menu a {
-	display: inline-block;
+	display: block;
 	padding: 15px 35px;
+	border-left: 1px solid transparent;
+	border-right: 1px solid transparent;
 	color: white;
 	font-size: 14.67px;
 	font-family: 'Open Sans', sans-serif;
 }
 
 .menu li a:hover {
-	display: inline-block;
-	padding: 15px 35px;
-	/*border-left: 1px solid #999;
-	border-right: 1px solid #999;*/
-	color: white;
-	background: #333;
-	font-size: 14.67px;
-	font-family: 'Open Sans', sans-serif;
+	border-left: 1px solid #999;
+	border-right: 1px solid #999;
 }
 
 /*  SIDEBAR  */

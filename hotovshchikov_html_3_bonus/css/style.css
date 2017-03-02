@@ -1,13 +1,25 @@
-body, html { 
-    width: 100%;
-    height: 100%;
+/*html,
+body {
+	width: 100%;
+	height: 100%;
+}
+*/
+.header,
+.main,
+.footer {
+	margin: 0 auto;
 }
 
 .wrapper {
-	background: url(img/bg.jpg) no-repeat;
-	background-size: 100%;
-	background: #e0f;
+	margin: 0 auto;
+	background: #560;
+/*	background-image: url('img/bg.jpg');
+	background-size: 100%;*/
 }
+
+/*.wrapper img {
+	width: 100%;
+}*/
 
 /*  HEADER  */
 
@@ -29,3 +41,19 @@ body, html {
 }
 
 /*  MAIN  */
+
+.main {
+	width: 100%;
+}
+
+.india,
+.nepal,
+.tibet,
+.bhutan,
+.sri_lanka,
+.maldives {
+	float: left;
+	display: block;
+	width: 263px;
+	margin: 52px 11px;
+}
