@@ -1,6 +1,6 @@
 body {
 	position: relative;
-	width: 100%;
+	width: 1280px;
 	height: 100%;
 }
 
@@ -12,26 +12,29 @@ body {
 
 .bg_image {
 	position: absolute;
-	width: 100%;
-/*	height: 1024px;*/
+	left: 100px;
+	right: 100px;
+	width: 1280px;
+	height: 1024px;
 }
 
 .wrapper {
-	position: relative;
+	position: absolute;
+	left: 235px;
 	width: 1000px;
 	margin: 0 auto;
 	background-color: #fff;
 }
 .header {
-	position: absolute;
+	position: relative;
 	width: 1000px;
 	background-color: #fff;
 }
 
 .logo {
 	float: left;
-	margin: 25px 20px 0 5px;
-	padding: 15px 20px 0 15px;
+	margin: 0px 20px 0 5px;
+	padding: 7px 20px 0 15px;
 }
 
 span {
@@ -40,8 +43,8 @@ span {
 
 .contacts {
 	float: right;
-	margin: 5px 15px 5px 60px;
-	padding: 5px 15px 5px 60px;
+	margin: 0px 15px 5px 60px;
+	padding: 0px 15px 5px 60px;
 	list-style: none;
 	font-size: 12px;
 	font-weight: normal;
@@ -55,7 +58,7 @@ span {
 
 .flag {
 	float: right;
-	margin-right: 15px;
+	margin: 5px 15px;
 	text-align: center;
 }
 
@@ -70,3 +73,32 @@ span {
 	font-size: 10px;
 	color: #099;
 }
+
+.image img {
+	width: auto;
+	margin: 2px 0 0 0;
+	border-top: 1px solid #099;
+	border-bottom: 1px solid #099;
+}
+
+.mеnu ul {
+	position: relative;
+	overflow: hidden;
+	border-bottom: 1px solid #000;
+	background: #333;
+}
+
+.menu li {
+	float: left;
+	list-style: none;
+}
+
+.menu a {
+	display: block;
+	padding: 5px 20px;
+	margin: 5px;
+	border:1px solid #000;
+	text-decoration: none;
+	color: #000;
+}
+
