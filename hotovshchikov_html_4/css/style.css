@@ -97,7 +97,6 @@ span {
 }
 
 .menu li {
-	line-height: 0;
 	float: left;
 	position: relative;
 	list-style: none;
