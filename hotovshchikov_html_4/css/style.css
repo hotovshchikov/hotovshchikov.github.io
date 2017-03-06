@@ -1,6 +1,6 @@
 body {
-	background-image: url(img/bg.jpg);
-	position: relative;
+	background-image: url(../img/bg.jpg);
+	margin: 0 auto;
 	width: 1280px;
 	height: 100%;
 }
@@ -22,8 +22,6 @@ body {
 }
 
 .wrapper {
-	position: absolute;
-	left: 235px;
 	width: 1000px;
 	margin: 0 auto;
 	background-color: #fff;
@@ -36,7 +34,7 @@ body {
 
 .logo {
 	float: left;
-	margin: 0px 20px 0 5px;
+	margin: 0px 20px 2px 5px;
 	padding: 7px 20px 0 15px;
 }
 
@@ -80,31 +78,34 @@ span {
 .image img {
 	clear: both;
 	width: auto;
-	margin: 2px 0 0 0;
+	margin: 0 0 -4px 0;
 	border-top: 1px solid #099;
 	border-bottom: 1px solid #099;
 }
 
 .menu {
-	position: relative;
 	background: #333;
-	padding-top:1px;
 }
 
-.mеnu ul {
-	position: absolute;
+.menu ul {
+	width: 1000px;
 	margin: 0 auto;
+	padding: 0;
+	border-bottom: 1px solid #000;
 }
 
 .menu li {
-	float: left;
 	position: relative;
+	width: 140px;
+	margin: 0 auto;
+	float: left;
 	list-style: none;
+	text-align: center;
 }
 
 .menu a {
 	display: block;
-	padding: 5px 20px;
+	padding: 5px 0;
 	margin: 5px;
 	/*border:1px solid #000;*/
 	text-decoration: none;
@@ -113,6 +114,14 @@ span {
 	font-weight: normal;
 	font-family: 'Tahoma';
 }
+
+.arrow {
+	font-size: 7px;
+	color: #fff;
+	padding: 5px;
+	/*vertical-align: top;*/
+}
+
 .menu>li>a:hover {
 	background-color: #333;
 }
@@ -122,10 +131,10 @@ span {
 	position: absolute;
 	padding: 5px;
 	width: 140px;
-	top: 37px;
+	top: 36px;
 	left: 0;
 	background-color: #333;
-	/*border: 1px solid #000;*/
+	border-top: 1px solid #000;
 }
 
 .menu ul .submenu> li {
@@ -135,8 +144,7 @@ span {
 
 .menu ul .submenu> li> a {
 	display: block;
-	padding: 5px 10px;
-	margin: 0;
+	margin: 0 auto;
 	width: auto;
 	/*border:1px solid #000;*/
 	text-decoration: none;
