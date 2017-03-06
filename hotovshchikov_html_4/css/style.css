@@ -86,11 +86,14 @@ span {
 }
 
 .menu {
+	position: relative;
 	background: #333;
+	padding-top:1px;
 }
 
 .mеnu ul {
-	margin:0 auto;
+	position: absolute;
+	margin: 0 auto;
 }
 
 .menu li {
