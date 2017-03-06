@@ -1,13 +1,16 @@
 body {
+	background-image: url(img/bg.jpg);
 	position: relative;
 	width: 1280px;
 	height: 100%;
 }
 
 .clearfix:after {
+	content: ".";
+	visibility: hidden;
 	display: block;
+	height: 0;
 	clear: both;
-	content: '';
 }
 
 .bg_image {
@@ -75,16 +78,19 @@ span {
 }
 
 .image img {
+	clear: both;
 	width: auto;
 	margin: 2px 0 0 0;
 	border-top: 1px solid #099;
 	border-bottom: 1px solid #099;
 }
 
-.mеnu ul {
-	display: block;
-	border-bottom: 1px solid #000;
+.menu {
 	background: #333;
+}
+
+.mеnu ul {
+	margin:0 auto;
 }
 
 .menu li {
@@ -99,7 +105,7 @@ span {
 	margin: 5px;
 	/*border:1px solid #000;*/
 	text-decoration: none;
-	color: #000;
+	color: #fff;
 	font-size: 14px;
 	font-weight: normal;
 	font-family: 'Tahoma';
