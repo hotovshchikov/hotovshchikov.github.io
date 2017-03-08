@@ -9,8 +9,7 @@ body,
 body {
 	background-image: url(../img/bg.jpg);
 	background-repeat: repeat-x;
-	margin: 0 auto;
-	width: 1280px;
+	width: 100%;
 	height: 100%;
 }
 
@@ -49,14 +48,19 @@ body {
 	padding: 7px 20px 0 15px;
 }
 
-span {
+h4 {
+	margin: 10px 0 5px 0;
+	padding-left: 40px;
+	font-size: 12px;
+	font-weight: normal;
 	color: #69c;
+	font-family: 'Tahoma';
 }
 
 .contacts {
 	float: right;
-	margin: 0px 15px 5px 60px;
-	padding: 0px 15px 5px 60px;
+	margin: 0px 15px 15px 60px;
+	padding: 0px 15px 15px 60px;
 	list-style: none;
 	font-size: 12px;
 	font-weight: normal;
@@ -64,29 +68,41 @@ span {
 	font-family: 'Tahoma';
 }
 
+.contacts ul {
+	margin: 0;
+	list-style: none;
+}
+
 .contacts li {
-	padding-top: 8px;
+	padding-top: 5px;
 }
 
 .flag {
 	float: right;
-	margin: 5px 15px;
-	text-align: center;
 }
 
 .flag ul {
-	float: left;
-	margin: 0 5px;
-	padding: 0 5px;
+	margin: 0 10px;
+	padding: 0 10px;
 	list-style: none;
 }
 
+.flag li {
+	float: left;
+}
+
 .flag a {
+	display: block;
+	width: 57px;
+	line-height: 10px;
+	text-align: center;
+}
+.flag span {
 	font-size: 10px;
 	color: #099;
 }
 
-.image img {
+.headline img {
 	clear: both;
 	width: auto;
 	margin: 0 0 -4px 0;
@@ -181,8 +197,6 @@ main {
 	float: left;
 	width: 25%;
 	padding-bottom: 5px;
-	text-align: center;
-	line-height: 10px;
 	background-color: #fff;
 }
 
@@ -205,12 +219,17 @@ main {
 }
 
 h2 {
+	text-align: center;
+	line-height: 10px;
 	font-size: 18px;
 	color: #333;
 	font-family: 'Tahoma';
 }
 
 p {
+	text-align: left;
+	padding-left: 40px;
+	line-height: 23px;
 	font-size: 14px;
 	color: #333;
 	font-family: 'Tahoma';
