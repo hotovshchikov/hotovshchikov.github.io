@@ -194,14 +194,12 @@ main {
 }
 
 .information {
-	float: left;
 	width: 25%;
 	padding-bottom: 5px;
 	background-color: #fff;
 }
 
 .content {
-	float: left;
 	width: 50%;
 	padding-bottom: 5px;
 	border-left: 1px solid #ccc;
@@ -209,7 +207,6 @@ main {
 }
 
 .news {
-	float: right;
 	width: 25%;
 	padding-bottom: 5px;
 	margin: 0 -5px 0 0;
