@@ -1,77 +1,110 @@
 html, 
 body {
+	display: flex;
+	justify-content: center;
     width: 100%;
     height: 100%;
     margin: 0;
     padding: 0;
-    overflow: hidden;
-}
-
-.parent {
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center; 
-    overflow: auto;   
+    background-color: #000;
 }
 
 .wrapper {
-    background: #60a839;
-}
-
-.wrapper img {
-        display: block;
-        border: none;
-}
-
-/*.wrapper {
+	height: 100%;
+	width: 960px;
+	height: 883px;
 	margin: 0 auto;
-	background: #560;
-	background-image: url('img/bg.jpg');
-	background-size: 100%;
+	background-image: url(../img/bg.jpg);
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
 }
 
-.wrapper img {
-	width: 100%;
-}*/
+.header {
+	margin-top: 50px;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+}
 
-/*  HEADER  */
-
-/*.header {
-	height: 166px;
+.logo-box h4 {
+	margin: -22px 0 11px 130px;
+	font-size: 10.16px;
+	color: #fff;
+	font-family: 'Tahoma';
 }
 
 .logo {
-	display: block;
-	float: left;
-	margin: 10px 70px;
+	margin-left: 50px;
+	margin-bottom: 30px;
+}
+
+.palm {
+	margin-left: -129px;
+	margin-bottom: -5px;
+	opacity: 0.1;
 }
 
 .contacts {
-	display: block;
-	float: right;
-	margin: 56px 70px;
-	padding-top: 35px;
-}*/
-
-/*  MAIN  */
-
-/*.main {
-	width: 100%;
+	margin-right: 50px;
+	/*align-items: flex-end;*/
 }
 
-.india,
-.nepal,
-.tibet,
-.bhutan,
-.sri_lanka,
-.maldives {
-	float: left;
+.contacts h4 {
+	margin: 0 auto;
+	padding-left: 50px;
+	font-size: 10.16px;
+	color: #fff;
+	font-family: 'Tahoma';
+}
+
+.contacts ul {
+	margin: 10px;
+	line-height: 12px;
+	list-style: none;
+}
+.contacts li {
+	font-size: 8.47px;
+	color: #fff;
+	font-family: 'Tahoma';
+}
+
+.main {
+	width: 870px;
+	margin: 0 auto;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+}
+
+.main img {
+	border: 3px solid #999;
+	box-shadow: inset 0 0 10px #000;
+}
+
+.main a {
 	display: block;
-	width: 263px;
-	margin: 52px 11px;
-}*/
+	width: 270px;
+	height: 200px;
+	margin-bottom: 50px;
+	text-align: center;
+	text-decoration: none;
+}
+
+span {
+	font-size: 15.24px;
+	color: #fff;
+	font-family: 'Tahoma';
+}
+
+.footer {
+	margin-top: 120px;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+}
+.footer h5 {
+	font-size: 10.16px;
+	color: #fff;
+	font-family: 'Tahoma';
+}
