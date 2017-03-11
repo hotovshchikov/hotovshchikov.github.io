@@ -19,3 +19,132 @@
     font-weight: bold;
     font-style: normal;
 }
+
+.clearfix:after {
+	content: ".";
+	visibility: hidden;
+	display: block;
+	height: 0;
+	clear: both;
+}
+
+.wrapper {
+	width: 1215px;
+	height: 1058px;
+	margin: 0 auto;
+	background-image: url(../img/bg.jpg);
+}
+
+.header {
+	margin:0 auto;
+	width: 1215px;
+	background-color: #069;
+}
+
+.submenu {
+	float: right;
+	margin: 0 20px 0 0;
+	padding: 0;
+	list-style: none;
+}
+
+.submenu li {
+	width: 200px;
+	float: left;
+	text-align: center;
+	color: #fff;
+	border-left: 2px solid transparent;
+	border-right: 2px solid transparent;
+	border-bottom: 2px solid transparent;
+}
+
+.submenu li a {
+	font-size: 14px;
+	line-height: 36px;
+	color: #fff;
+	font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+.submenu .ofertas {
+	width: 140px;
+	line-height: 36px;
+	border-left: 2px solid transparent;
+	border-right: 2px solid transparent;
+	border-bottom: 2px solid transparent;
+}
+
+.submenu .ofertas a {
+	display: block;
+}
+
+.submenu .ofertas i {
+	font-size: 20px;
+	padding-right: 5px;
+}
+
+.submenu .ofertas a {
+	text-decoration: none;
+	font-size: 14px;
+	text-align: center;
+	color: #fff;
+	font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+.submenu .ofertas:hover {
+	border-left: 2px solid #69c;
+	border-right: 2px solid #69c;
+	border-bottom: 2px solid #69c;
+	background: linear-gradient(to top, #39c, #69c);
+}
+
+.submenu li:hover {
+	border-left: 2px solid #69c;
+	border-right: 2px solid #69c;
+	border-bottom: 2px solid #69c;
+	background: linear-gradient(to top, #39c, #69c);
+}
+
+.menu {
+	float: right;
+	margin: 2px;
+	overflow: hidden;
+	list-style: none;
+	border-right: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.menu li {
+	width: 100px;
+	float: left;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	font-size: 14px;
+}
+
+.menu .li_width {
+	width: 70px;
+}
+
+.menu li a {
+	display: block;
+	line-height: 36px;
+	margin-top: -2px;
+	color: #fff;
+	opacity: 0.5;
+	text-decoration: none;
+	font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+.menu li:hover {
+	background-color: #69c;
+}
+
+.menu a:hover {
+	color: #fff;
+	opacity: 1;
+}
+
+/*.menu ul:after {
+	border-right: 1px solid #fff;
+}
+*/
