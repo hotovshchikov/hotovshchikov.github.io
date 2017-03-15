@@ -20,6 +20,13 @@
     font-style: normal;
 }
 
+body { 
+	width: 100%;
+	height: 100%;
+	background-image: url(../img/bg.jpg);
+	background-repeat: no-repeat;	
+}
+
 .clearfix:after {
 	content: ".";
 	visibility: hidden;
@@ -29,16 +36,12 @@
 }
 
 .wrapper {
-	width: 1215px;
-	height: 1058px;
+	width: 100vw;
+	height: 100vh;
 	margin: 0 auto;
-	background-image: url(../img/bg.jpg);
-	background-repeat: no-repeat;
 }
 
 .header {
-	margin:0 auto;
-	width: 1215px;
 	background-color: #069;
 }
 
@@ -148,9 +151,14 @@
 }
 
 .login_box {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
 	width: 560px;
 	height: 614px;
-	margin: 175px auto;
+	margin: 225px auto;
 	padding: 0;
 	background-color: rgba(0, 0, 0, 0.5);
 }
@@ -171,7 +179,7 @@ h3 {
 }
 
 .fb_button {
-	list-style: none;
+	display: block;
 	width: 275px;
 	margin: 30px auto;
 	padding: 0;
@@ -180,8 +188,7 @@ h3 {
 	border-top: 1px solid #69c;
 }
 
-.fb_button li {
-	display: inline-block;
+.fb_button {
 	text-align: center;
 }
 
@@ -202,10 +209,11 @@ h3 {
 }
 
 .f {
+	float: left;
 	width: 36px;
 	margin: 0;
 	padding-bottom: 3px;
-	line-height: 31px;
+	line-height: 30px;
 	border-right: 1px solid #000;
 }
 
@@ -222,9 +230,9 @@ h3 {
 }
 
 .fb_login {
-	margin-left: -4px;
-	padding-left: 25px;
-	line-height: 37px;
+	float: left;
+	width: 237px;
+	line-height: 36px;
 	border-left: 1px solid #69c;
 }
 
@@ -232,29 +240,18 @@ h3 {
 	display: block;
 }
 
-.hr {
+fieldset {
 	width: 275px;
 	margin: 0 auto;
+	padding: 0;
+	border:none;
+	border-top: 1px solid #666;
 }
 
-.hr1 {
-	float: left;
-	width: 120px;
-	color: #666;
-	border-bottom-color: #000;
-}
-
-.hr2 {
-	float: right;
-	width: 120px;
-	color: #666;
-	border-bottom-color: #000;
-}
-
-.hr span {
+legend {
 	padding: 5px;
+	text-align: center;
 	text-transform: uppercase;
-	font-size: 14px;
 	color: #666;
 	font-family: 'Helvetica Neue', Arial, sans-serif;
 	font-weight: normal;
@@ -314,7 +311,7 @@ form {
 	box-shadow: 0 0 15px #fff;
 }
 
-form span {
+label {
 	font-size: 14px;
 	color: #ccc;
 	font-family: 'Helvetica Neue', Arial, sans-serif;
@@ -336,10 +333,10 @@ form span {
 	border-radius: 5px 5px;
 }
 
-h4 {
+p {
 	display: block;
 	width: 300px;
-	margin: 30px auto 0 auto;
+	margin: 20px auto 0 auto;
 	text-align: center;
 	font-size: 11px;
 	color: #ccc;

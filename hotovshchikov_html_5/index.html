@@ -9,8 +9,8 @@
 </head>
 <body>
 	<div class="wrapper">
-		<header class="header clearfix">
-			<nav>
+		<header class="header">
+			<nav class="clearfix">
 				<ul class="submenu">
 					<li class="ofertas"><a href="#"><i class="fa fa-flag" aria-hidden="true"></i> Minhas Ofertas</a></li>
 					<li>Ola! <a href="#">Entrar</a> ou <a href="#">Cadastre-se</a></li>
@@ -26,27 +26,27 @@
 		</header>
 		<div class="login_box">
 			<h3>Cadastre-se</h3>
-			<ul class="fb_button">
-				<li class="f"><a href="#"><span>f</span></a></li>
-				<li class="fb_login"><a href="#"><span>Log In</span> with <span>Facebook</span> <span class="arrow">></span></a></li>
-			</ul>
-			<div class="hr">
-				<hr class="hr1">
-				<span>ou</span>
-				<hr class="hr2">
+			<div class="fb_button clearfix">
+				<div class="f"><a href="#"><span>f</span></a></div>
+				<div class="fb_login"><a href="#"><span>Log In</span> with <span>Facebook</span> <span class="arrow">></span></a></div>
 			</div>
+		<fieldset>
+			<legend>ou</legend>
 			<form action="#">
 				<input class="f_name" type="text" required="" placeholder="First Name">
 				<input class="l_name" type="text" required="" placeholder="Last Name">
 				<input class="email" type="email" required="" placeholder="Email Address">
 				<input class="choose_password" type="password" required="" placeholder="Choose Password">
 				<input class="conf_password" type="password" required="" placeholder="Password Confirm">
-				<input class="checkbox" type="checkbox">
-				<span>Send me Youbike updates and tips</span>
+				<label>
+					<input class="checkbox" type="checkbox">
+					Send me Youbike updates and tips
+				</label>
 				<input class="submit" type="submit" value="Create my Account">
+		</fieldset>
+				<p>By clicking the button above, you agree to the Terms of Service
+Xiew our Privacy Policy.</p>>
 			</form>
-			<h4>By clicking the button above, you agree to the Terms of Service
-Xiew our Privacy Policy.</h4>
 		</div>
 	</div>
 </body>
