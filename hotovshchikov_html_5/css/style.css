@@ -23,6 +23,7 @@
 body { 
 	width: 100%;
 	height: 100%;
+	min-height: 100vh;
 	background-image: url(../img/bg.jpg);
 	background-repeat: no-repeat;	
 }
@@ -36,12 +37,18 @@ body {
 }
 
 .wrapper {
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: flex-start;
+	align-items: center;
 	width: 100%;
 	height: 100vh;
 	margin: 0 auto;
 }
 
 .header {
+	flex: 0 1 auto;
+	width: 100%;
 	background-color: #069;
 }
 
@@ -151,22 +158,21 @@ body {
 }
 
 main {
-	display: flex;
-	justify-content: center;
+	flex: 0 1 auto;
+	margin: auto;
 }
 
 .login_box {
-	display: flex;
-	flex-direction: column;
-	position: absolute;
-	top: 0;
+	/*position: absolute;
+	top: 230px;
 	left: 0;
 	bottom: 0;
 	right: 0;
+	margin: 0 auto;
+	margin-bottom: 150px;*/
 	width: 560px;
 	height: 614px;
-	margin: 225px auto;
-	padding: 0;
+	text-align: center;
 	background-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -186,7 +192,7 @@ h3 {
 }
 
 .fb_button {
-	display: block;
+	display: inline-block;
 	width: 275px;
 	margin: 30px auto;
 	padding: 0;
@@ -195,12 +201,8 @@ h3 {
 	border-top: 1px solid #69c;
 }
 
-.fb_button {
-	text-align: center;
-}
-
 .fb_button a {
-	padding-top: 5px;
+	display: block;
 	text-decoration: none;
 	font-size: 14px;
 	color: #fff;
@@ -216,35 +218,36 @@ h3 {
 }
 
 .f {
-	float: left;
-	width: 36px;
+	display: inline-block;
+	text-align: center;
+	width: 40px;
 	margin: 0;
-	padding-bottom: 3px;
+	padding-bottom: 8px;
+	padding-top: 3px;
 	line-height: 30px;
 	border-right: 1px solid #000;
 }
 
-.f a {
-	display: block;
-}
-
-.f span {
+.fb_button .f {
 	font-size: 25px;
 }
 
 .arrow {
+	display: inline-block;
 	margin-left: 20px;
 }
 
 .fb_login {
-	float: left;
-	width: 237px;
+	display: inline-block;
+	padding-top: 3px;
+	padding-left: 20px;
 	line-height: 36px;
 	border-left: 1px solid #69c;
 }
 
-.fb_login a {
-	display: block;
+.fb {
+	display: inline-block;
+	line-height: 36px;
 }
 
 fieldset {
@@ -252,16 +255,35 @@ fieldset {
 	margin: 0 auto;
 	padding: 0;
 	border:none;
-	border-top: 1px solid #666;
 }
 
-legend {
-	padding: 5px;
+.ou {
 	text-align: center;
+	overflow: hidden;
 	text-transform: uppercase;
 	color: #666;
 	font-family: 'Helvetica Neue', Arial, sans-serif;
 	font-weight: normal;
+}
+
+.ou:before,
+.ou:after {
+/*	position: relative;*/
+	content: "";
+	display: inline-block;
+	width: 115px;
+	height: 5px;
+	vertical-align: middle;
+	box-shadow: 0px -1px 0px 0px rgba(102, 102, 102, 1),
+	inset 0px 1px 0px 0px rgba(0, 0, 0, 1);
+}
+
+.ou:before {
+	margin-right: 6px;
+}
+
+.ou:after {
+	margin-left: 6px;
 }
 
 form {

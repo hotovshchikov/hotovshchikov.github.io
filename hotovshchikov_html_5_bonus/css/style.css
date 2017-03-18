@@ -1,8 +1,13 @@
 table {
-	width: 500px;
-	height: 500px;
+	/*width: 700px;
+	height: 700px;*/
 	border: 5px solid #000;
 	border-collapse: collapse;
+}
+
+.hide {
+	display: none;
+	overflow: hidden;
 }
 
 tr {
