@@ -352,6 +352,7 @@ p {
 	display: block;
 	width: 300px;
 	margin: 20px auto 0 auto;
+	padding-bottom: 20px;
 	text-align: center;
 	font-size: 11px;
 	color: #ccc;
