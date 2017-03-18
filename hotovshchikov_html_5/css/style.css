@@ -169,9 +169,10 @@ main {
 	bottom: 0;
 	right: 0;
 	margin: 0 auto;
-	margin-bottom: 150px;*/
+	margin-bottom: 150px;
+	min-height: 614px;*/
+	flex: 0 1 auto;
 	width: 560px;
-	height: 614px;
 	text-align: center;
 	background-color: rgba(0, 0, 0, 0.5);
 }
