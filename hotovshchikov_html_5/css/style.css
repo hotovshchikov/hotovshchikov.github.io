@@ -23,7 +23,9 @@
 body { 
 	min-height: 100vh;
 	background-image: url(../img/bg.jpg);
-	background-repeat: no-repeat;	
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+		background-size: cover;	
 }
 
 .clearfix:after {
@@ -35,8 +37,8 @@ body {
 }
 
 .wrapper {
-	display: flex;
-	flex-direction: column;
+	max-width: 2048px;
+	margin: 0 auto;
 }
 
 .header {
