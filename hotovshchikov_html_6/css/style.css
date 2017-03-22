@@ -1,0 +1,222 @@
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.wrapper {
+	max-width: 908px;
+	margin: 5px auto;
+	padding:5px;
+}
+
+.header {
+	width: 908px;
+	height: 400px;
+	display: flex;
+	flex-direction: column;
+}
+
+.info {
+	width: 908px;
+	margin-bottom: 10px;
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.contacts {
+	flex-grow: 2;
+	font-size: 18px;
+	color: #666;
+	font-family: Arial, sans-serif;
+}
+
+.contacts span {
+	margin-left: 25px;
+	padding-left: 20px;
+	line-height: 25px;
+}
+
+.contacts img {
+	position: absolute;
+	left: 15px;
+	bottom: 2px;
+}
+
+.login {
+	flex-grow: 3;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	border-radius: 5px;
+	-webkit-box-shadow: 3px 2px 4px 0px rgba(0,0,0,0.5);
+	-moz-box-shadow: 3px 2px 4px 0px rgba(0,0,0,0.5);
+	box-shadow: 3px 2px 4px 0px rgba(0,0,0,0.5);
+	background: linear-gradient(to top, #036, #369);
+}
+
+.login img {
+	display: block;
+	height: 15px;
+	padding-top: 5px;
+}
+
+.login input[type="text"],
+input[type="password"] {
+	width: 113px;
+	font-size: 11px;
+	font-family: 'Lucida Sans Unicode', arial;
+}
+
+.login input[type="submit"] {
+	background: none;
+	cursor: pointer;
+	border: none;
+	font-size: 11px;
+	color: #fff;
+	font-family: 'Lucida Sans Unicode', arial;
+}
+
+.login a {
+	display: block;
+	line-height: 25px;
+	font-size: 11px;
+	color: rgba(255,255,255, .5);
+	font-family: 'Lucida Sans Unicode', arial;
+}
+
+.login .registration {
+	display: block;
+	line-height: 25px;
+	text-decoration: none;
+	font-size: 11px;
+	color: #fff;
+	font-family: 'Lucida Sans Unicode', arial;
+}
+
+.login .registration:before {
+	content: '';
+	display: inline-block;
+	height: 10px;
+	padding-right: 5px;
+	border-left: 1px solid #fff;
+}
+
+.icons {
+	flex-grow: 1;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	margin: 0 15px;
+	padding:0 5px;
+	border: 1px solid #ccc;
+	border-radius: 15px;
+	-webkit-box-shadow: 0 2px 2px -1px rgba(0,0,0,0.5);
+	-moz-box-shadow: 0 2px 2px -1px rgba(0,0,0,0.5);
+	box-shadow: 0 2px 2px -1px rgba(0,0,0,0.5);
+}
+
+.logo {
+	width: 908px;
+}
+
+.nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	width: 908px;
+	box-shadow: 0 7px 6px -5px #fff inset;
+	background: linear-gradient(to top, #000, #333);
+}
+
+.nav ul {
+	flex-grow: 1;
+	display: flex;
+	justify-content: flex-end;
+	margin: 5px;
+	margin-right: 50px;
+	padding: 5px;
+	list-style: none;
+}
+
+.nav ul li {
+	display: inline-block;
+	width: 124px;
+	text-align: center;
+}
+
+.nav ul li a {
+	display: block;
+	padding: 5px 10px;
+	text-transform: uppercase;
+	font-size: 14px;
+	line-height: 16px;
+	color: #036;
+	font-family: 'Lucida Sans Unicode', arial;
+}
+
+.nav ul li a:hover {
+	display: block;
+	padding: 5px 10px;
+	border-radius: 15px;
+	color: #fff;
+	background: linear-gradient(to top, #036, #369);
+}
+
+.nav .li-width {
+	width: 100px;
+}
+
+.basket {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+}
+
+.basket a img {
+	position: absolute;
+	left: -25px;
+	top: 10px;
+	height: 15px;
+}
+
+.basket p {
+	font-size: 11px;
+	color: rgba(255, 255, 255, .5);
+	font-family: Arial, sans-serif;
+}
+
+.basket p span {
+	margin-right: 15px;
+	color: #036;
+	font-size: 12px;
+}
+.search {
+	width: 908px;
+	height: 100px;
+	display: flex;
+	flex-direction: row;
+}
+
+.search-cars {
+	flex-grow: 3;
+	height: 50px;
+	background: red;
+}
+
+.search-tire {
+	flex-grow: 1;
+	height: 50px;
+	background: green;
+}
+
+.search-disc {
+	flex-grow: 2;
+	height: 50px;
+	background: blue;
+}
