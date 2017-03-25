@@ -220,3 +220,155 @@ input[type="password"] {
 	height: 50px;
 	background: blue;
 }
+
+.main {
+	width: 908px;
+	display: flex;
+	flex-direction: row;
+}
+
+.catalog {
+	flex-grow: 1;
+}
+
+.catalog img {
+	font-size: 15px;
+}
+
+.catalog-names {
+	display: inline-block;
+	width: 149px;
+	border: 1px solid #036;
+	border-radius: 8px;
+}
+
+.catalog-menu h3 span {
+	display: block;
+	padding-left: 15px;
+	text-transform: uppercase;
+	font-size: 13px;
+	color: #036;
+	font-family: 'Lucida Sans Unicode', arial;
+}
+
+.catalog-menu img {
+	font-size: 15px;
+}
+
+.catalog-menu ul li {
+	list-style: circle;
+	color: #366;
+}
+
+.catalog-menu li a {
+	text-decoration: none;
+	font-size: 13px;
+	color: #366;
+	font-family: 'Lucida Sans Unicode', arial;
+}
+
+.catalog-menu li a:hover {
+	text-decoration: underline;
+	font-size: 14px;
+	color: #036;
+}
+
+.product {
+	flex-grow: 2;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	background: linear-gradient(to top, #9cc, #cff);
+}
+
+.figure {
+	width: 140px;
+	margin: 20px;
+	padding: 0;
+	text-align: center;
+}
+
+.border {
+	border: 1px solid #ccc;
+	border-radius: 8px;
+	background: #fff;
+}
+
+figcaption .tire-name {
+	font-size: 15px;
+	color: #369;
+	font-family: 'Lucida Sans Unicode', arial;
+}
+
+figcaption h3 {
+	margin: 0;
+	padding:  0;
+	font-size: 13px;
+	color: #000;
+	font-family: 'Lucida Sans Unicode', arial;
+	font-weight: normal;
+}
+
+figcaption .tire-price {
+	font-size: 16px;
+	color: #369;
+	font-family: arial , sans-serif;
+	font-weight: bold;
+	font-style: italic;
+}
+
+figcaption .tire-price .uah {
+	font-size: 12px;
+	color: #369;
+	font-family: arial , sans-serif;
+	font-weight: bold;
+	font-style: italic;
+}
+
+.brends {
+	flex-grow: 1;
+}
+
+.brends img {
+	font-size: 15px;
+}
+
+.brends-names {
+	display: inline-block;
+	width: 149px;
+	border: 1px solid #036;
+	border-radius: 8px;
+}
+
+fieldset {
+	border: none;
+}
+
+fieldset ul {
+	list-style: none;
+	padding: 0;
+}
+
+fieldset li {
+	margin: 5px;
+}
+
+fieldset span {
+	padding-left: 15px;
+	font-size: 13px;
+	color: #366;
+	font-family: 'Lucida Sans Unicode', arial;
+}
+
+input[type="submit"] {
+	margin: 5px;
+	margin-left: 25px;
+	padding: 5px;
+	border-radius: 8px;
+	text-transform: uppercase;
+	font-size: 11px;
+	color: #fff;
+	font-family: arial, sans-serif;
+	font-weight: normal;
+	background: linear-gradient(to top, #036, #369);
+}
