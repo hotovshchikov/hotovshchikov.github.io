@@ -231,6 +231,13 @@ input[type="password"] {
 	flex-grow: 1;
 }
 
+.catalog-title {
+	display: inline-block;
+	width: 149px;
+	border: 1px solid #036;
+	border-radius: 8px;
+}
+
 .catalog img {
 	font-size: 15px;
 }
@@ -329,6 +336,13 @@ figcaption .tire-price .uah {
 	flex-grow: 1;
 }
 
+.catalog-brends {
+	display: inline-block;
+	width: 149px;
+	border: 1px solid #036;
+	border-radius: 8px;
+}
+
 .brends img {
 	font-size: 15px;
 }
@@ -371,4 +385,53 @@ input[type="submit"] {
 	font-family: arial, sans-serif;
 	font-weight: normal;
 	background: linear-gradient(to top, #036, #369);
+}
+
+.footer	{
+	width: 908px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.footer .brands-logo {
+	margin: 10px;
+	text-align: center;
+}
+
+.footer .footer-menu {
+	text-align: center;
+	background: #336;
+}
+
+.footer-menu ul {
+	margin: 5px;
+	padding: 5px;
+	list-style: none;
+}
+
+.footer-menu li {
+	display: inline-block;
+	padding-right: 20px;
+	padding-left: 20px;
+	border-right: 1px solid #fff;
+}
+
+.footer-menu a {
+	text-decoration: none;
+	font-size: 12px;
+	color: #ccc;
+	font-family: arial, sans-serif;
+}
+
+.footer-menu a:hover {
+	color: #69c;
+}
+
+.footer-menu span {
+	display: block;
+	margin-bottom: 50px;
+	font-size: 10px;
+	color: #633;
+	font-family: arial, sans-serif;
 }
