@@ -28,6 +28,7 @@ body {
 }
 
 .contacts {
+	width: 286px;
 	flex-grow: 2;
 	display: flex;
 	flex-direction: row;
@@ -67,20 +68,29 @@ body {
 
 .login img {
 	display: block;
-	padding-left: 14px;
 	height: 17px;
 	padding-top: 6px;
 }
 
+.login-form {
+	width: 262px;
+	margin: 0;
+	padding: 0;
+}
+
 .login input[type="text"],
 input[type="password"] {
-	width: 113px;
+	width: 111px;
 	font-size: 11px;
 	font-family: 'Lucida Sans Unicode', arial;
 }
 
 .login input[type="submit"] {
 	background: none;
+	margin-left: 0;
+	margin-right: 0;
+	padding-left: 0;
+	padding-right: 0;
 	cursor: pointer;
 	border: none;
 	font-size: 9px;
@@ -107,7 +117,6 @@ input[type="password"] {
 
 .login .registration:before {
 	content: '';
-	display: inline-block;
 	height: 10px;
 	padding-right: 5px;
 	border-left: 1px solid #fff;
