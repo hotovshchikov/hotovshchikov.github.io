@@ -5,6 +5,7 @@
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
 	 <link href="http://allfont.ru/allfont.css?fonts=lucida-sans-unicode" rel="stylesheet" type="text/css" />
+	 <script src="https://use.fontawesome.com/d68bdc7d53.js"></script>
 	<title>Document</title>
 </head>
 <body>
@@ -12,26 +13,28 @@
 		<header class="header">
 			<section class="info">
 				<div class="contacts">
-					<img src="img/telephone.gif" alt="">
-					<span>(044)123-45-67</span>
-					<span class="tel-2">(044)567-89-10</span>
+					<div class="phone">
+					<i class="fa fa-phone" aria-hidden="true"></i>
+					</div>
+					<span class="tel-1">(044)123-<span></span>45-67</span>
+					<span class="tel-2">(044)567-<span></span>89-10</span>
 				</div>
 				<div class="login">
-					<img src="img/login.gif" alt="">
-					<fieldset class="login-form">
-						<form action="/">
+					<i class="fa fa-user" aria-hidden="true"></i>
+					<form action="/">
+						<fieldset class="login-form">
 							<input type="text" placeholder="логин">
 							<input type="password" placeholder="пароль">
 							<input type="submit" value="вход">
-						</form>
-					</fieldset>
+						</fieldset>
+					</form>
 					<a class="registration" href="#">регистрация</a>
 					<a href="#">забыли пароль?</a>
 				</div>
 				<div class="icons">
-					<a href="#"><img src="img/home.gif" alt=""></a>
-					<a href="#"><img src="img/map.gif" alt=""></a>
-					<a href="#"><img src="img/letter.gif" alt=""></a>
+					<i class="fa fa-home" aria-hidden="true"></i>
+					<i class="fa fa-sitemap" aria-hidden="true"></i>
+					<i class="fa fa-envelope-o" aria-hidden="true"></i>
 				</div>				
 			</section>
 			<div class="logo">
@@ -46,7 +49,7 @@
 					<li class="li-width"><a href="#">Контакты</a></li>
 				</ul>
 				<div class="basket">
-					<a href="#"><img src="img/basket.gif" alt=""></a>
+					<a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
 					<p>товаров: <span>0</span></p>
 					<p>на сумму: <span>0,00 грн.</span></p>
 				</div>
@@ -67,13 +70,15 @@
 		<main class="main">
 		<aside class="catalog">
 			<div class="catalog-title">
-				<img src="img/catalog.gif" alt="">
-			<span>Каталог продукции:</span>
+				<div class="catalog-icon">
+					<i class="fa fa-file-text-o" aria-hidden="true"></i>
+					<h1>Каталог продукции:</h1>
+				</div>
 			</div>
 			<nav class="catalog-menu">
 				<div class="catalog-names">
 					<img src="img/circle.gif" alt="">
-					<span>Шины</span>
+					<h2>Шины</h2>
 				</div>
 				<ul>
 					<li>
@@ -91,7 +96,7 @@
 				</ul>
 				<div class="catalog-names">
 					<img src="img/circle.gif" alt="">
-					<span>Диски</span>
+					<h2>Диски</h2>
 				</div>
 				<ul>
 					<li>
@@ -109,7 +114,7 @@
 				</ul>
 				<div class="catalog-names">
 					<img src="img/circle.gif" alt="">
-					<span>Болты</span>
+					<h2>Болты</h2>
 				</div>
 				<ul>
 					<li>
@@ -128,6 +133,7 @@
 			</nav>
 		</aside>
 		<div class="product">
+		<a href="#">
 			<figure class="figure">
 				<figcaption>
 					<span class="tire-name">Goodyear</span>
@@ -136,10 +142,10 @@
 				<div class="border">
 					<img src="img/tire-1.gif" alt="">
 				</div>
-				<figcaption>
 					<span class="tire-price">90.00 <span class="uah">грн.</span></span>
-				</figcaption>
 			</figure>
+		</a>
+		<a href="#">
 			<figure class="figure">
 				<figcaption>
 					<span class="tire-name">Nokian</span>
@@ -148,10 +154,10 @@
 				<div class="border">
 					<img src="img/tire-2.gif" alt="">
 				</div>
-				<figcaption>
 					<span class="tire-price">115.00 <span class="uah">грн.</span></span>
-				</figcaption>
 			</figure>
+		</a>
+		<a href="#">
 			<figure class="figure">
 				<figcaption>
 					<span class="tire-name">Hankook</span>
@@ -160,10 +166,10 @@
 				<div class="border">
 					<img src="img/tire-3.gif" alt="">
 				</div>
-				<figcaption>
 					<span class="tire-price">393.00 <span class="uah">грн.</span></span>
-				</figcaption>
 			</figure>
+		</a>
+		<a href="#">
 			<figure class="figure">
 				<figcaption>
 					<span class="tire-name">Goodyear</span>
@@ -172,10 +178,10 @@
 				<div class="border">
 					<img src="img/tire-1.gif" alt="">
 				</div>
-				<figcaption>
 					<span class="tire-price">90.00 <span class="uah">грн.</span></span>
-				</figcaption>
 			</figure>
+		</a>
+		<a href="#">
 			<figure class="figure">
 				<figcaption>
 					<span class="tire-name">Nokian</span>
@@ -184,10 +190,10 @@
 				<div class="border">
 					<img src="img/tire-2.gif" alt="">
 				</div>
-				<figcaption>
 					<span class="tire-price">115.00 <span class="uah">грн.</span></span>
-				</figcaption>
 			</figure>
+		</a>
+		<a href="#">
 			<figure class="figure">
 				<figcaption>
 					<span class="tire-name">Hankook</span>
@@ -196,10 +202,10 @@
 				<div class="border">
 					<img src="img/tire-3.gif" alt="">
 				</div>
-				<figcaption>
 					<span class="tire-price">393.00 <span class="uah">грн.</span></span>
-				</figcaption>
 			</figure>
+		</a>
+		<a href="#">
 			<figure class="figure">
 				<figcaption>
 					<span class="tire-name">Goodyear</span>
@@ -208,10 +214,10 @@
 				<div class="border">
 					<img src="img/tire-1.gif" alt="">
 				</div>
-				<figcaption>
 					<span class="tire-price">90.00 <span class="uah">грн.</span></span>
-				</figcaption>
 			</figure>
+		</a>
+		<a href="#">
 			<figure class="figure">
 				<figcaption>
 					<span class="tire-name">Nokian</span>
@@ -220,10 +226,10 @@
 				<div class="border">
 					<img src="img/tire-2.gif" alt="">
 				</div>
-				<figcaption>
 					<span class="tire-price">115.00 <span class="uah">грн.</span></span>
-				</figcaption>
 			</figure>
+		</a>
+		<a href="#">
 			<figure class="figure">
 				<figcaption>
 					<span class="tire-name">Hankook</span>
@@ -232,23 +238,24 @@
 				<div class="border">
 					<img src="img/tire-3.gif" alt="">
 				</div>
-				<figcaption>
 					<span class="tire-price">393.00 <span class="uah">грн.</span></span>
-				</figcaption>
 			</figure>
+		</a>
 		</div>
 		<aside class="brends">
 			<div class="catalog-brends">
-			<img src="img/catalog.gif" alt="">
-			<span>Бренды:</span>
-			</div>
-			<nav class="brends-menu">
-				<div class="brends-names">
-					<img src="img/circle.gif" alt="">
-					<span>Шины</span>
+				<div class="brends-icon">
+					<i class="fa fa-file-text-o" aria-hidden="true"></i>
+					<h1>Бренды:</h1>
 				</div>
+			</div>
+			<div class="brends-menu">
 				<form action="/">
 					<fieldset>
+				<div class="brends-names">
+					<img src="img/circle.gif" alt="">
+					<h2>Шины</h2>
+				</div>
 						<ul>
 							<li>
 								<label>
@@ -270,11 +277,11 @@
 							</li>
 						</ul>
 					</fieldset>
-				<div class="brends-names">
-					<img src="img/circle.gif" alt="">
-					<span>Диски</span>
-				</div>
 					<fieldset>
+					<div class="brends-names">
+						<img src="img/circle.gif" alt="">
+						<h2>Диски</h2>
+					</div>
 						<ul>
 							<li>
 								<label>
@@ -298,13 +305,20 @@
 					</fieldset>
 					<input type="submit" value="Выбрать">
 				</form>
-			</nav>
+			</div>
 		</aside>
 		</main>
-		<footer class="footer">
 			<div class="brands-logo">
-				<img src="img/brends.gif" alt="">
+				<a href="#"><img src="img/1.gif" alt=""></a>
+				<a href="#"><img src="img/2.gif" alt=""></a>
+				<a href="#"><img src="img/3.gif" alt=""></a>
+				<a href="#"><img src="img/4.gif" alt=""></a>
+				<a href="#"><img src="img/5.gif" alt=""></a>
+				<a href="#"><img src="img/6.gif" alt=""></a>
+				<a href="#"><img src="img/7.gif" alt=""></a>
+				<a href="#"><img src="img/8.gif" alt=""></a>
 			</div>
+		<footer class="footer">
 			<nav class="footer-menu">
 				<ul>
 					<li><a href="#">О Компании</a></li>
@@ -312,7 +326,7 @@
 					<li><a href="#">Статьи</a></li>
 					<li><a href="#">Контакты</a></li>
 				</ul>
-			<span>Создание сайта &copy Global Vision</span>
+			<p>Создание сайта &copy Global Vision</p>
 			</nav>
 		</footer>
 	</div>

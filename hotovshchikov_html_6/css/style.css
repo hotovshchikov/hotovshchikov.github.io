@@ -28,7 +28,7 @@ body {
 }
 
 .contacts {
-	width: 286px;
+	width: 281px;
 	flex-grow: 2;
 	display: flex;
 	flex-direction: row;
@@ -37,28 +37,53 @@ body {
 	font-family: Arial, sans-serif;
 }
 
-.contacts span {
+.contacts .tel-1 {
 	margin-left: 12px;
 	padding-left: 21px;
 	line-height: 32px;
 }
 
+.contacts .tel-1 span {
+	display: inline-block;
+	margin: 0;
+	padding-left: 4px;
+}
+
 .contacts .tel-2 {
 	display: block;
 	padding-left: 0;
+	line-height: 32px;
+	padding-left: 8px;
 }
 
-.contacts img {
+.contacts .tel-2 span {
+	display: inline-block;
+	margin: 0;
+	padding-left: 4px;
+}
+
+.contacts .phone {
+	display: block;
+	width: 20px;
+	height: 20px;
+	background: linear-gradient(to top, #369, #036);
+	border-radius: 16px;
 	position: absolute;
 	left: 7px;
 	bottom: 1px;
 }
 
+.phone i {
+	color: #fff;
+	padding-left: 2px;
+}
+
 .login {
+	width: 450px;
 	flex-grow: 3;
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
+	justify-content: flex-start;
 	border-radius: 5px;
 	-webkit-box-shadow: 3px 2px 4px 0px rgba(0,0,0,0.5);
 	-moz-box-shadow: 3px 2px 4px 0px rgba(0,0,0,0.5);
@@ -66,21 +91,25 @@ body {
 	background: linear-gradient(to top, #036, #369);
 }
 
-.login img {
+.login i {
 	display: block;
-	height: 17px;
-	padding-top: 6px;
+	font-size: 18px;
+	padding: 5px 3px 0 9px;
+/*	padding-top: 5px;*/
+	color: #fff;
 }
 
 .login-form {
-	width: 262px;
+	width: 274px;
 	margin: 0;
 	padding: 0;
 }
 
 .login input[type="text"],
 input[type="password"] {
-	width: 111px;
+	width: 108px;
+	margin-right: 3px;
+	padding-left: 3px;
 	font-size: 11px;
 	font-family: 'Lucida Sans Unicode', arial;
 }
@@ -100,25 +129,26 @@ input[type="password"] {
 
 .login a {
 	display: block;
+	margin-top: 1px;
 	line-height: 25px;
-	font-size: 11px;
+	font-size: 11.7px;
 	color: rgba(255,255,255, .5);
 	font-family: 'Lucida Sans Unicode', arial;
 }
 
 .login .registration {
-	display: block;
-	line-height: 25px;
 	text-decoration: none;
+	margin-right: 19px;
 	font-size: 11px;
 	color: #fff;
-	font-family: 'Lucida Sans Unicode', arial;
 }
 
 .login .registration:before {
 	content: '';
+	display: inline-block;
 	height: 10px;
 	padding-right: 5px;
+	vertical-align: middle;
 	border-left: 1px solid #fff;
 }
 
@@ -128,8 +158,12 @@ input[type="password"] {
 	flex-direction: row;
 	justify-content: space-around;
 	align-items: center;
-	margin: 0 15px;
+	width: 42px;
+	height: 20px;
+	margin: 0 10px;
 	padding:0 5px;
+	font-size: 11px;
+	color: #699;
 	border: 1px solid #ccc;
 	border-radius: 15px;
 	-webkit-box-shadow: 0 2px 2px -1px rgba(0,0,0,0.5);
@@ -147,6 +181,7 @@ input[type="password"] {
 	justify-content: center;
 	align-items: center;
 	width: 908px;
+	border-radius: 8px;
 	box-shadow: 0 7px 6px -5px #fff inset;
 	background: linear-gradient(to top, #000, #333);
 }
@@ -170,10 +205,11 @@ input[type="password"] {
 .nav ul li a {
 	display: block;
 	padding: 5px 10px;
+	text-decoration: none;
 	text-transform: uppercase;
 	font-size: 14px;
 	line-height: 16px;
-	color: #036;
+	color: rgba(255, 255, 255, .5);
 	font-family: 'Lucida Sans Unicode', arial;
 }
 
@@ -195,11 +231,12 @@ input[type="password"] {
 	flex-direction: row;
 }
 
-.basket a img {
+.basket i {
 	position: absolute;
 	left: -25px;
 	top: 10px;
 	height: 15px;
+	color: #39c;
 }
 
 .basket p {
@@ -249,22 +286,74 @@ input[type="password"] {
 }
 
 .catalog-title {
-	display: inline-block;
-	width: 149px;
+	width: 176px;
+	margin-top: 5px;
+	margin-bottom: 20px;
+	padding: 3px;
 	border: 1px solid #036;
-	border-radius: 8px;
+	border-radius: 16px;
+	box-shadow: 2px 5px 10px #999;
 }
 
-.catalog img {
+.catalog-icon {
+	display: flex;
+	flex-direction: row;
+	width: 20px;
+	height: 20px;
+	background: linear-gradient(to top, #036, #369);
+	border-radius: 16px;
+}
+
+.catalog-icon i {
+	padding-top: 3px;
+	padding-left: 3px;
+	margin-right: 10px;
+	color: #fff;
 	font-size: 15px;
 }
 
+.catalog-icon h1 {
+	white-space: pre;
+	line-height: 4px;
+	text-transform: uppercase;
+	font-size: 13px;
+	color: #036;
+	font-family: 'Lucida Sans Unicode', arial;
+}
+
 .catalog-names {
-	display: inline-block;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 5px;
 	width: 149px;
 	border: 1px solid #036;
-	border-radius: 8px;
+	border-radius: 16px;
 }
+
+.catalog-names img {
+	width: 20px;
+	height: 20px
+}
+
+.catalog-names h2 {
+	display: inline-block;
+	margin: 0;
+	padding-left: 5px;
+	text-transform: uppercase;
+	font-size: 14px;
+	color: #036;
+	font-family: 'Lucida Sans Unicode', arial;
+}
+
+/*.catalog-names h2:before {
+	content: '';
+	display: block;
+	width: 20px;
+	height: 20px;
+	border-radius: 16px;
+	background: #036;
+}*/
 
 .catalog-menu h3 span {
 	display: block;
@@ -281,6 +370,7 @@ input[type="password"] {
 
 .catalog-menu ul li {
 	list-style: circle;
+	padding: 5px;
 	color: #366;
 }
 
@@ -295,6 +385,8 @@ input[type="password"] {
 	text-decoration: underline;
 	font-size: 14px;
 	color: #036;
+	font-weight: bold;
+	font-style: italic;
 }
 
 .product {
@@ -305,9 +397,13 @@ input[type="password"] {
 	background: linear-gradient(to top, #9cc, #cff);
 }
 
+.product a {
+	text-decoration: none;
+}
+
 .figure {
 	width: 140px;
-	margin: 20px;
+	margin: 20px 10px;
 	padding: 0;
 	text-align: center;
 }
@@ -333,7 +429,7 @@ figcaption h3 {
 	font-weight: normal;
 }
 
-figcaption .tire-price {
+.tire-price {
 	font-size: 16px;
 	color: #369;
 	font-family: arial , sans-serif;
@@ -341,7 +437,7 @@ figcaption .tire-price {
 	font-style: italic;
 }
 
-figcaption .tire-price .uah {
+.tire-price .uah {
 	font-size: 12px;
 	color: #369;
 	font-family: arial , sans-serif;
@@ -353,11 +449,41 @@ figcaption .tire-price .uah {
 	flex-grow: 1;
 }
 
+.brends-icon {
+	display: flex;
+	flex-direction: row;
+	width: 20px;
+	height: 20px;
+	background: linear-gradient(to top, #036, #369);
+	border-radius: 16px;
+}
+
+.brends-icon i {
+	padding-top: 3px;
+	padding-left: 3px;
+	margin-right: 10px;
+	color: #fff;
+	font-size: 15px;
+}
+
+.brends-icon h1 {
+	white-space: pre;
+	line-height: 4px;
+	text-transform: uppercase;
+	font-size: 13px;
+	color: #036;
+	font-family: 'Lucida Sans Unicode', arial;
+}
+
 .catalog-brends {
-	display: inline-block;
-	width: 149px;
+	width: 176px;
+	margin-top: 5px;
+	margin-bottom: 20px;
+	padding: 3px;
 	border: 1px solid #036;
-	border-radius: 8px;
+	border-radius: 16px;
+	box-shadow: 2px 5px 10px #999;
+	
 }
 
 .brends img {
@@ -365,10 +491,23 @@ figcaption .tire-price .uah {
 }
 
 .brends-names {
-	display: inline-block;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 5px;
 	width: 149px;
 	border: 1px solid #036;
-	border-radius: 8px;
+	border-radius: 16px;
+}
+
+.brends-names h2 {
+	display: inline-block;
+	margin: 0;
+	padding-left: 5px;
+	text-transform: uppercase;
+	font-size: 14px;
+	color: #036;
+	font-family: 'Lucida Sans Unicode', arial;
 }
 
 fieldset {
@@ -394,8 +533,8 @@ fieldset span {
 input[type="submit"] {
 	margin: 5px;
 	margin-left: 25px;
-	padding: 5px;
-	border-radius: 8px;
+	padding: 5px 10px;
+	border-radius: 16px;
 	text-transform: uppercase;
 	font-size: 11px;
 	color: #fff;
@@ -411,9 +550,16 @@ input[type="submit"] {
 	justify-content: center;
 }
 
-.footer .brands-logo {
-	margin: 10px;
-	text-align: center;
+.brands-logo {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin: 25px;
+	padding: 5px
+}
+
+.brands-logo a {
+	padding: 0 10px;
 }
 
 .footer .footer-menu {
@@ -429,10 +575,22 @@ input[type="submit"] {
 
 .footer-menu li {
 	display: inline-block;
-	padding-right: 20px;
 	padding-left: 20px;
+}
+
+.footer-menu li:after {
+	content: '';
+	display: inline-block;
+	vertical-align: middle;
+	padding-left: 20px;
+	height: 10px;
 	border-right: 1px solid #fff;
 }
+
+.footer-menu li:nth-child(4):after {
+	border:none;
+}
+
 
 .footer-menu a {
 	text-decoration: none;
@@ -445,7 +603,7 @@ input[type="submit"] {
 	color: #69c;
 }
 
-.footer-menu span {
+.footer-menu p {
 	display: block;
 	margin-bottom: 50px;
 	font-size: 10px;
