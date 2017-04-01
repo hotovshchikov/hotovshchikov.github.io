@@ -455,6 +455,7 @@ input[type="password"] {
 }
 
 .catalog-names h3 a:hover {
+	transition: .2s;
 	text-decoration: underline;
 	font-size: 14px;
 	color: #036;
@@ -678,6 +679,7 @@ input[type="submit"] {
 }
 
 .footer-menu a:hover {
+	transition: .2s;
 	color: #69c;
 }
 
