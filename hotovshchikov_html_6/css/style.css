@@ -13,7 +13,6 @@ body {
 
 .header {
 	width: 908px;
-	height: 500px;
 	display: flex;
 	flex-direction: column;
 }
@@ -277,10 +276,14 @@ input[type="password"] {
 	flex-direction: row;
 }
 
+.basket a {
+	text-decoration: none;
+}
+
 .basket i {
-	position: absolute;
-	left: -29px;
-	top: 10px;
+	display: block;
+	margin-right: 10px;
+	line-height: 44px;
 	height: 15px;
 	color: #39c;
 }
@@ -366,9 +369,12 @@ input[type="password"] {
 
 .catalog {
 	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
 }
 
-.catalog-title {
+.catalog-title-box {
+	display: block;
 	width: 176px;
 	margin-top: 5px;
 	margin-bottom: 20px;
@@ -378,16 +384,20 @@ input[type="password"] {
 	box-shadow: 2px 5px 10px #999;
 }
 
-.catalog-icon {
-	display: flex;
-	flex-direction: row;
+.catalog-title {
 	width: 20px;
 	height: 20px;
 	background: linear-gradient(to top, #036, #369);
 	border-radius: 16px;
+	margin: 0;
+	white-space: pre;
+	text-transform: uppercase;
+	font-size: 13px;
+	color: #036;
+	font-family: 'Lucida Sans Unicode', arial;
 }
 
-.catalog-icon i {
+.catalog-title i {
 	padding-top: 3px;
 	padding-left: 3px;
 	margin-right: 10px;
@@ -395,76 +405,56 @@ input[type="password"] {
 	font-size: 15px;
 }
 
-.catalog-icon h1 {
-	white-space: pre;
-	line-height: 4px;
-	text-transform: uppercase;
-	font-size: 13px;
-	color: #036;
-	font-family: 'Lucida Sans Unicode', arial;
-}
-
 .catalog-names {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
+	display: block;
 	padding: 5px;
 	width: 149px;
-	border: 1px solid #036;
-	border-radius: 16px;
-}
-
-.catalog-names img {
-	width: 20px;
-	height: 20px
 }
 
 .catalog-names h2 {
 	display: inline-block;
+	background: url(../img/circle.gif);
+	background-repeat: no-repeat;
+	background-size: 20px;
+	background-position: 3px 4px;
 	margin: 0;
-	padding-left: 5px;
+	padding: 5px;
+	width: 139px;
+	padding-left: 25px;
+	line-height: 20px;
 	text-transform: uppercase;
 	font-size: 14px;
 	color: #036;
 	font-family: 'Lucida Sans Unicode', arial;
-}
-
-/*.catalog-names h2:before {
-	content: '';
-	display: block;
-	width: 20px;
-	height: 20px;
+	font-weight: normal;
+	border: 1px solid #036;
 	border-radius: 16px;
-	background: #036;
-}*/
-
-.catalog-menu h3 span {
-	display: block;
-	padding-left: 15px;
-	text-transform: uppercase;
-	font-size: 13px;
-	color: #036;
-	font-family: 'Lucida Sans Unicode', arial;
 }
 
-.catalog-menu img {
-	font-size: 15px;
+.catalog-names ul {
+	padding-left: 30px;
 }
 
-.catalog-menu ul li {
+.catalog-names li {
 	list-style: circle;
-	padding: 5px;
+	margin: 0;
+	padding: 0;
 	color: #366;
 }
 
-.catalog-menu li a {
+.catalog-names h3 {
+	margin: 0;
+}
+
+.catalog-names h3 a {
 	text-decoration: none;
 	font-size: 13px;
 	color: #366;
 	font-family: 'Lucida Sans Unicode', arial;
+	font-weight: normal;
 }
 
-.catalog-menu li a:hover {
+.catalog-names h3 a:hover {
 	text-decoration: underline;
 	font-size: 14px;
 	color: #036;
@@ -498,18 +488,19 @@ input[type="password"] {
 }
 
 figcaption .tire-name {
-	font-size: 15px;
-	color: #369;
-	font-family: 'Lucida Sans Unicode', arial;
-}
-
-figcaption h3 {
 	margin: 0;
 	padding:  0;
 	font-size: 13px;
 	color: #000;
 	font-family: 'Lucida Sans Unicode', arial;
 	font-weight: normal;
+}
+
+figcaption h3 {
+	margin: 0;
+	font-size: 15px;
+	color: #369;
+	font-family: 'Lucida Sans Unicode', arial;
 }
 
 .tire-price {
@@ -533,12 +524,16 @@ figcaption h3 {
 }
 
 .brends-icon {
-	display: flex;
-	flex-direction: row;
 	width: 20px;
 	height: 20px;
 	background: linear-gradient(to top, #036, #369);
 	border-radius: 16px;
+	margin: 0;
+	white-space: pre;
+	text-transform: uppercase;
+	font-size: 13px;
+	color: #036;
+	font-family: 'Lucida Sans Unicode', arial;
 }
 
 .brends-icon i {
@@ -547,15 +542,6 @@ figcaption h3 {
 	margin-right: 10px;
 	color: #fff;
 	font-size: 15px;
-}
-
-.brends-icon h1 {
-	white-space: pre;
-	line-height: 4px;
-	text-transform: uppercase;
-	font-size: 13px;
-	color: #036;
-	font-family: 'Lucida Sans Unicode', arial;
 }
 
 .catalog-brends {
@@ -569,28 +555,30 @@ figcaption h3 {
 	
 }
 
-.brends img {
-	font-size: 15px;
-}
-
 .brends-names {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
+	display: block;
 	padding: 5px;
 	width: 149px;
-	border: 1px solid #036;
-	border-radius: 16px;
 }
 
 .brends-names h2 {
 	display: inline-block;
+	background: url(../img/circle.gif);
+	background-repeat: no-repeat;
+	background-size: 20px;
+	background-position: 3px 4px;
 	margin: 0;
-	padding-left: 5px;
+	padding: 5px;
+	width: 139px;
+	padding-left: 25px;
+	line-height: 20px;
 	text-transform: uppercase;
 	font-size: 14px;
 	color: #036;
 	font-family: 'Lucida Sans Unicode', arial;
+	font-weight: normal;
+	border: 1px solid #036;
+	border-radius: 16px;
 }
 
 fieldset {
@@ -604,6 +592,11 @@ fieldset ul {
 
 fieldset li {
 	margin: 5px;
+}
+
+fieldset label,
+input[type="checkbox"] {
+	cursor: pointer;
 }
 
 fieldset span {
@@ -624,6 +617,7 @@ input[type="submit"] {
 	font-family: arial, sans-serif;
 	font-weight: normal;
 	background: linear-gradient(to top, #036, #369);
+	cursor: pointer;
 }
 
 .footer	{
@@ -645,9 +639,10 @@ input[type="submit"] {
 	padding: 0 10px;
 }
 
-.footer .footer-menu {
-	text-align: center;
+.footer {
+	padding-bottom: 50px;
 	background: #336;
+	text-align: center;
 }
 
 .footer-menu ul {
@@ -686,10 +681,10 @@ input[type="submit"] {
 	color: #69c;
 }
 
-.footer-menu p {
+.footer adress a {
 	display: block;
-	margin-bottom: 50px;
 	font-size: 10px;
+	text-decoration: none;
 	color: #633;
 	font-family: arial, sans-serif;
 }
