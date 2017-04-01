@@ -283,7 +283,7 @@ input[type="password"] {
 .basket i {
 	display: block;
 	margin-right: 10px;
-	line-height: 44px;
+	line-height: 36px;
 	height: 15px;
 	color: #39c;
 }
@@ -291,7 +291,6 @@ input[type="password"] {
 .basket p {
 	display: block;
 	padding-right: 2px;
-	padding-bottom: 9px;
 	font-size: 11px;
 	color: rgba(255, 255, 255, .5);
 	font-family: Arial, sans-serif;
