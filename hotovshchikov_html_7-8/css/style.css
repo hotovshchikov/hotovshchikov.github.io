@@ -16,7 +16,7 @@ body {
 
 .bg-headerMain {
 	background: url(../img/bg-header.jpg);
-	background-size: 100%;
+	/*background-size: 100%;*/
 }
 
 .bg-header {
@@ -110,6 +110,7 @@ body {
 }
 
 .slider {
+	height: 400px;
 	position: relative;
 	display: flex;
 	align-items: center;
@@ -158,17 +159,62 @@ body {
 	opacity: .5;
 }
 
+.footer {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
 .info {
+	display: flex;
+	flex-direction: column;
+	padding-top: 80px;
+	width: 260px;
+}
+
+ .icon-1 {
 	display: block;
+	align-self: center;
+	padding-bottom: 110px;
+	width: 30px;
+	height: 30px;
+	background: url(../img/sprite.png) -105px 0 no-repeat;
+	color: #fff;
+}
+
+.icon-2 {
+	display: block;
+	align-self: center;
+	padding-bottom: 110px;
+	width: 30px;
+	height: 30px;
+	background: url(../img/sprite.png) -50px 0 no-repeat;
+	color: #fff;
+}
+
+.icon-3 {
+	display: block;
+	align-self: center;
+	padding-bottom: 110px;
+	width: 30px;
+	height: 30px;
+	background: url(../img/sprite.png) 2px 0 no-repeat;
+	color: #fff;
 }
 
 .info__title {
 	margin: 0;
 	text-transform: uppercase;
+	text-align: center;
+	padding-right: 25px;
 	font-size: 30px;
 	color: #fff;
 	font-family: 'League Gothic', 'Arial', sans-serif;
 	font-weight: normal;
+}
+
+.info__title--left {
+	text-align: left;
 }
 
 .info__text {
@@ -177,4 +223,21 @@ body {
 	color: #fcf;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: normal;
+}
+
+.info__link {
+	align-self: flex-end;
+	display: block;
+	padding-top: 35px;
+	padding-bottom: 70px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 18px;
+	color: #fff;
+	font-family: 'League Gothic', 'Arial', sans-serif;
+	font-weight: normal;
+}
+
+.info__link:hover {
+	text-shadow: 0 0 10px #fff;
 }
