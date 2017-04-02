@@ -1,0 +1,130 @@
+@font-face {
+	font-family: 'League Gothic';
+	src: url('../fonts/leaguegothic-regular-webfont.eot');
+	src: url('../fonts/leaguegothic-regular-webfont.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/leaguegothic-regular-webfont.woff2') format('woff2'),
+		url('../fonts/leaguegothic-regular-webfont.woff') format('woff'),
+		url('../fonts/leaguegothic-regular-webfont.ttf') format('truetype'),
+		url('../fonts/leaguegothic-regular-webfont.svg#League Gothic') format('svg');
+	font-weight: normal;
+}
+
+body {
+	max-width: 2400px;
+	background: url(../img/bg-header.jpg);
+	background-size: 100%;
+}
+
+
+.wrapper {
+	width: 960px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+}
+
+.header {
+	padding-bottom: 130px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.logo {
+	padding-top: 5px;
+	flex-grow: 1;
+	display: block;
+}
+
+.logo a {
+	text-decoration: none;
+}
+
+.logo h1 {
+	text-transform: uppercase;
+	font-size: 48px;
+	color: #fff;
+	font-family: 'League Gothic', 'Arial', sans-serif;
+	font-weight: normal;
+}
+
+.logo span {
+	background: linear-gradient(to top, #333, #669);
+	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+}
+
+.menu {
+	flex-grow: 2;
+	list-style: none;
+}
+
+.menu__item {
+	display: block;
+}
+
+.menu__link {
+	display: inline-block;
+	margin: 20px 42px 20px 0;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 24px;
+	color: #fff;
+	font-family: 'League Gothic', 'Arial', sans-serif;
+	font-weight: normal;
+	border: 3px solid transparent;
+	box-sizing: border-box;
+}
+
+.menu__link:last-child {
+	margin: 20px 0 20px 0;
+}
+
+.menu__link:hover {
+	border-bottom: 3px solid rgba(255, 255, 255, .5);
+}
+
+.main {
+
+}
+
+.slider {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.article {
+	display: block;
+	width: 550px;
+}
+
+.article__h1 {
+	margin: 0;
+	font-size: 60px;
+	color: #fff;
+	font-family: 'League Gothic', 'Arial', sans-serif;
+	font-weight: normal;
+}
+
+.article__h2 {
+	margin: 0;
+	text-transform: uppercase;
+	font-size: 32px;
+	color: #fcf;
+	font-family: 'League Gothic', 'Arial', sans-serif;
+	font-weight: normal;
+}
+
+.article__p {
+	margin: 0;
+	font-size: 18px;
+	color: #fcf;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: normal;
+}
+
+.iphone {
+	display: block;
+	padding-right: 70px;
+}
