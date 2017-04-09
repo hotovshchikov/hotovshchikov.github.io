@@ -1,5 +1,80 @@
-@media screen and (max-width: 2400px) {
-	.wrapper {
-		width: 100%;
-	}
+@media screen and (max-width: 768px) {
+
+.wrapper {
+	width: 768px;
+}
+
+.header {
+	padding-bottom: 20px;
+}
+
+.logo {
+	margin-top: 70px;
+}
+
+.iphone {
+	padding-right: 20px;
+}
+
+.article {
+	padding-left: 20px;
+	max-width: 370px;
+	max-height: 250px;
+	overflow: hidden;
+}
+
+.article__h2 {
+	display: block;
+	max-width: 370px;
+	max-height: 40px;
+	overflow: hidden;
+}
+
+.article__p {
+	display: block;
+	max-width: 350px;
+	max-height: 82px;
+	overflow: hidden;
+}
+
+.radio {
+	margin-top: 30px;
+}
+
+.info {
+	padding-top: 0;
+	max-width: 162px;
+}
+
+.info__title {
+	font-size: 23px;
+}
+
+.info__text {
+	display: block;
+	overflow: hidden;
+	max-height: 110px;
+}
+
+.article__h2--dark {
+	padding-right: 200px;
+}
+
+.article__h2--block {
+	padding-bottom: 40px;
+	font-size: 24px;
+}
+
+.article__p--slider {
+	max-width: 245px;
+	max-height: 110px;
+}
+
+.article__p--slider768 {
+	max-height: 20px;
+}
+
+.info--logo {
+	padding: 0;
+}
 }
