@@ -565,3 +565,7 @@ body {
 	margin: 0 auto;
 	padding: 10px 0 73px 0;
 }
+
+.pre-footer-768 {
+	display: none;
+}

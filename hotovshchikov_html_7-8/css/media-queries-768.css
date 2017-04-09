@@ -17,7 +17,7 @@
 }
 
 .article {
-	padding-left: 20px;
+	padding-left: 25px;
 	max-width: 370px;
 	max-height: 250px;
 	overflow: hidden;
@@ -37,13 +37,20 @@
 	overflow: hidden;
 }
 
+.article--slider {
+	width: 300px;
+}
+
+.updates-block {
+	padding-left: 25px;
+}
+
 .radio {
 	margin-top: 30px;
 }
 
-.info {
-	padding-top: 0;
-	max-width: 162px;
+.info--logo {
+	display: none;
 }
 
 .info__title {
@@ -76,5 +83,13 @@
 
 .info--logo {
 	padding: 0;
+}
+
+.pre-footer-768 {
+	display: block;
+}
+
+.info--pre-footer {
+	padding-right: 25px;
 }
 }
