@@ -44,10 +44,16 @@
 	text-shadow: 0 0 5px #fff;
 }
 
+
 .menu__link:last-child {
 	margin: 0;
 	border-bottom: 1px solid #000;
 	border-radius: 0 0 8px 8px; 
+}
+
+.menu__link--footer:last-child {
+	margin: 22px 5px 10px 3px;
+	border: none;
 }
 
 .menu__link:first-child {
