@@ -335,6 +335,9 @@
   .article__link {
     text-decoration: none; }
 
+.invisible {
+  display: none; }
+
 @media screen and (min-width: 768px) {
   .article__p--updates {
     color: #333; } }
