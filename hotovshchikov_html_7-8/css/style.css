@@ -76,9 +76,13 @@
 .logo--news {
   padding: 3rem 0 0 0;
   text-decoration: none; }
-  .logo--news h1 {
+  .logo--news h2 {
     margin-bottom: 0.3rem;
-    color: #333; }
+    text-transform: uppercase;
+    font-size: 3em;
+    color: #333;
+    font-family: "League Gothic", "Arial", sans-serif;
+    font-weight: normal; }
   .logo--news span {
     background: #ccc;
     -webkit-background-clip: text;
