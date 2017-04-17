@@ -4,201 +4,234 @@
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.scss">
 	<link rel="stylesheet" href="css/style.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="css/media-queries-768.css">
-	<link rel="stylesheet" href="css/media-queries-480.css">
-	<link rel="stylesheet" href="css/media-queries-320.css">
 	<title>Pingbuller</title>
 </head>
 <body>
-<div class="bg-headerMain">
-	<div class="bg-header">
-		<div class="wrapper">
-			<header class="header">
+<!-- <div class="bg-headerMain"> -->
+	<div class="bg-header wrapper">
+		<!-- <div class="wrapper"> -->
+			<header class="header wrapper">
 				<section class="logo">
 					<a href="#"><h1>Pingbull<span>er</span></h1></a>
 				</section>
-				<nav>
-					<ul class="menu menu-960">
+				<nav class="nav">
+					<ul class="menu">
 						<li class="menu__item">
-							<a class="menu__link" href="#">Home</a>
+							<a class="menu__link menu__link--initial" href="#">Home</a>
+						</li>
+						<li class="menu__item">
 							<a class="menu__link" href="#">About</a>
+						</li>
+						<li class="menu__item">
 							<a class="menu__link" href="#">Blog</a>
+						</li>
+						<li class="menu__item">
 							<a class="menu__link" href="#">Products</a>
+						</li>
+						<li class="menu__item">
 							<a class="menu__link" href="#">Lorem Ipsum</a>
+						</li>
+						<li class="menu__item">
 							<a class="menu__link" href="#">Dolor Sit Amet</a>
 						</li>
 					</ul>
 				</nav>
 			</header>
-		</div>
-	</div>
+<!-- 	</div> -->
 	<div class="bg-main">
 		<div class="wrapper">
 			<div class="slider">
-				<article class="article">
-					<h1 class="article__h1">Lorem Ipsum Dolor</h1>
-					<h2 class="article__h2">It will make all your dreams come true</h2>
+				<div class="slider__preview">
+					<article class="article">
+					<a class="article__link" href="#">
+						<h1 class="article__h1">Lorem Ipsum Dolor</h1>
+						<h2 class="article__h2">It will make all your dreams come true</h2>
+					</a>
 					<p class="article__p">Semper sollicitudin gravida eget, vestibulum sit amet sapien. Nunc dignissim tincidunt est, et auctor turpis ornare a. Nam venenatis hendrerit est at volutpat. Morbi elementum euismod lacus id semper. In odio nunc, imperdiet eget aliquam quis, euismod id lectus. Nulla interdum arcu et felis aliquam a tempus lectus lobortis.</p>
 				</article>
-				<img src="img/iphone.png" alt="" class="iphone">
+				</div>
+				<div class="slider__image">
+					<img class="slider__image--iphone" src="img/iphone.png" alt="" class="iphone">
+				</div>
 			</div>
 		</div>
 	</div>
-	<div class="wrapper">
-		<form action="/">
-			<fieldset class="radio">
-				<label>
-					<input type="radio">
-				</label>
-				<label>
-					<input type="radio">
-				</label>
-				<label>
-					<input type="radio">
-				</label>
-				<label>
-					<input type="radio">
-				</label>
-			</fieldset>
-		</form>
+	<div class=" radio-box wrapper">
+		<ul class="radio">
+			<li class="radio__item">
+				<input class="radio__btn" type="radio" name="choise" id="btn-1">
+				<label class="label" for="opt-1"></label>
+			</li>
+			<li class="radio__item">
+				<input class="radio__btn" type="radio" name="choise" id="btn-2">
+				<label class="label" for="opt-2"></label>
+			</li>
+			<li class="radio__item">
+				<input class="radio__btn" type="radio" name="choise" id="btn-3">
+				<label class="label" for="opt-3"></label>
+			</li>
+			<li class="radio__item">
+				<input class="radio__btn" type="radio" name="choise" id="btn-4">
+				<label class="label" for="opt-4"></label>
+			</li>
+		</ul>
 	</div>
 </div>
-	<div class="bg-info">
-		<div class="wrapper">
-		<div class="info-pannel">
-			<div class="icon icon--1">
+</div>
+	<div class="bg-info wrapper">
+	<!-- 	<div class="wrapper"> -->
+		<aside class="excerpt-box wrapper">
+			<!-- <div class="icon icon--1">
 				<a href="#"></a>
-			</div>
-			<article class="info">
-				<h2 class="info__title">About our company</h2>
-				<p class="info__text">Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam</p>
-				<a class="info__link" href="#">Read more</a>
+			</div> -->
+			<article class="excerpt excerpt--1">
+				<h2 class="excerpt__title">About our company</h2>
+				<p class="excerpt__text">Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam</p>
+				<a class="excerpt__link" href="#">Read more</a>
 			</article>
-			<div class="icon icon--2">
+			<!-- <div class="icon icon--2">
 				<a href="#"></a>
-			</div>
-			<article class="info info--padding">
-				<h2 class="info__title info__title--left">About our company</h2>
-				<p class="info__text">Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam</p>
-				<a class="info__link" href="#">Read more</a>
+			</div> -->
+			<article class="excerpt excerpt--2">
+				<h2 class="excerpt__title">About our company</h2>
+				<p class="excerpt__text">Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam</p>
+				<a class="excerpt__link" href="#">Read more</a>
 			</article>
-			<div class="icon icon--3">
+			<!-- <div class="icon icon--3">
 				<a href="#"></a>
-			</div>
-			<article class="info info--padding">
-				<h2 class="info__title info__title--left">About our company</h2>
-				<p class="info__text">Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam</p>
-				<a class="info__link info__link--padding" href="#">Read more</a>
+			</div> -->
+			<article class="excerpt excerpt--3">
+				<h2 class="excerpt__title">About our company</h2>
+				<p class="excerpt__text">Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam</p>
+				<a class="excerpt__link" href="#">Read more</a>
 			</article>
-		</div>
-		</div>
+<!-- 		</div> -->
+		</aside>
 	</div>
-	<div class="live-block wrapper">
+	<main class="main wrapper">
 		<div class="avatar">
 			<a href="#"><img src="img/avatar.png" alt=""></a>
 		</div>
-		<div class="article-block">
-			<article class="article article--pb20px article--slider">
-				<a class="article__h2--link" href="#"><h2 class="article__h2 article__h2-30px article__h2--block article__h2--light"><span class="article__h2--dark article__h2--dark-p0">Pingbuller</span> Starts here</h2></a>
-				<p class="article__p article__p480 article__p--slider article__p--light">"Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar urna risus, mattis pulvinar bibendum in, venenatis quis neque. Mauris nec metus ultricies erat consequat dignissim non eu nisl."</p>
+		<div class="article-box">
+			<article class="article article--main">
+				<a class="article__link" href="#"><h2 class="article__h2">Pingbuller</h2></a>
+				<a class="article__link" href="#"><h2 class="article__h2"><span>Starts here</span></h2></a>
+				<p class="article__p">"Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar urna risus, mattis pulvinar bibendum in, venenatis quis neque. Mauris nec metus ultricies erat consequat dignissim non eu nisl."</p>
 			</article>
-			<form class="article article--radio" action="/">
-				<fieldset class="radio radio--slider">
-					<label>
-						<input type="radio">
-					</label>
-					<label>
-						<input type="radio">
-					</label>
-					<label>
-						<input type="radio">
-					</label>
-					<label>
-						<input type="radio">
-					</label>
-				</fieldset>
-			</form>
+			<div class=" radio-box wrapper">
+			<ul class="radio radio--black">
+				<li class="radio__item">
+					<input class="radio__btn" type="radio" name="choise" id="btn-1">
+					<label class="label" for="opt-1"></label>
+				</li>
+				<li class="radio__item">
+					<input class="radio__btn" type="radio" name="choise" id="btn-2">
+					<label class="label" for="opt-2"></label>
+				</li>
+				<li class="radio__item">
+					<input class="radio__btn" type="radio" name="choise" id="btn-3">
+					<label class="label" for="opt-3"></label>
+				</li>
+				<li class="radio__item">
+					<input class="radio__btn" type="radio" name="choise" id="btn-4">
+					<label class="label" for="opt-4"></label>
+				</li>
+			</ul>
 		</div>
-		<div class="updates-block">
-			<article class="article updates-block__column">
-				<h2 class="article__h2 article__h2-30px article__h2--dark article__h2--light">Recent updates</h2>
-				<ul class="updates__item">
-					<li class="updates__li">
+		</div>
+		<div class="updates-box">
+				<h2 class="article__h2">Recent updates</h2>
+			<article class="article article--update">
+				<ul class="article__list">
+					<li class="article__item">
 						<a class="random-avatar random-avatar--1" href="#"></a>
 						<article>
-							<a href="#">
-								<h3 class="updates__h3 updates__h3--hide">Nunc turpis neque feugiat eget</h3>
-								<p class="article__p article__p--slider article__p--slider768 article__p--480 article__p--light">Posted by Admin on March 13 2012 in Recent News</p>
+							<a class="article__link" href="#">
+								<h3 class="article__h3">Nunc turpis neque feugiat eget</h3>
+								<p class="article__p article__p--updates">Posted by Admin on March 13 2012 in Recent News</p>
 							</a>
 						</article>
 					</li>
-					<li class="updates__li">
+					<li class="article__item">
 						<a class="random-avatar random-avatar--2" href="#"></a>
 						<article>
-							<a href="#">
-								<h3 class="updates__h3 updates__h3--hide">Nunc turpis neque feugiat eget</h3>
-								<p class="article__p article__p--slider article__p--slider768 article__p--480 article__p--light">Posted by Admin on March 13 2012 in Category</p>
+							<a class="article__link" href="#">
+								<h3 class="article__h3">Nunc turpis neque feugiat eget</h3>
+								<p class="article__p article__p--updates">Posted by Admin on March 13 2012 in Category</p>
 							</a>
 						</article>
 					</li>
-					<li class="updates__li">
+					<li class="article__item">
 						<a class="random-avatar random-avatar--3" href="#"></a>
 						<article>
-							<a href="#">
-								<h3 class="updates__h3 updates__h3--hide">Nunc turpis neque feugiat eget</h3>
-								<p class="article__p article__p--slider article__p--slider768 article__p--480 article__p--light">Posted by Admin on March 13 2012 in Blog Updates</p>
+							<a class="article__link" href="#">
+								<h3 class="article__h3">Nunc turpis neque feugiat eget</h3>
+								<p class="article__p article__p--updates">Posted by Admin on March 13 2012 in Blog Updates</p>
 							</a>
 						</article>
 					</li>
 				</ul>
-				<a class="info__link info__link--update" href="#">Read more here</a>
+				<a class="excerpt__link" href="#">Read more here</a>
 			</article>
 		</div>	
-	</div>	
-	<div class="bg-sponsors">
-		<div class="sponsors wrapper">
-			<a class="sponsors__link sponsors__link--1" href="#"></a>
-			<a class="sponsors__link sponsors__link--2" href="#"></a>
-			<a class="sponsors__link sponsors__link--3" href="#"></a>
-			<a class="sponsors__link sponsors__link--4" href="#"></a>
-			<a class="sponsors__link sponsors__link--5 sponsors__link--rvca" href="#"></a>
-			<a class="sponsors__link sponsors__link--6" href="#"></a>
+	</main>	
+	<div class="bg-adv">
+		<div class="adv wrapper">
+			<ul class="adv__list">
+				<li class="adv__item"><a class="adv__link adv__link--1" href="#"></a></li>
+				<li class="adv__item"><a class="adv__link adv__link--2" href="#"></a></li>
+				<li class="adv__item"><a class="adv__link adv__link--3" href="#"></a></li>
+				<li class="adv__item"><a class="adv__link adv__link--4" href="#"></a></li>
+				<li class="adv__item adv__item--5"><a class="adv__link adv__link--5" href="#"></a></li>
+				<li class="adv__item"><a class="adv__link adv__link--6" href="#"></a></li>
+			</ul>
 		</div>
 	</div>		
-	<div class="bg-pre-footer">
-		<div class="pre-footer wrapper">
-		<article class="info info--pre-footer pre-footer-768">
-				<a class="info__title--link" href="#"><h2 class="info__title info__title--dark info__title--left info__title--light">News Categories</h2></a>
-				<p class="info__text info__text--light info__text--pre-footer">Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar. Quisque urna risus, mattis pulvinar bibendum in, venenatis quis</p>
+	<aside class="bg-news">
+		<div class="news-box wrapper">
+		<article class="article article--news article--hidden">
+				<a class="article__link" href="#"><h2 class="article__h2 article__h2--news">News Categories</h2></a>
+				<p class="article__p article__p--news article__p--visible">Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar. Quisque urna risus, mattis pulvinar bibendum in, venenatis quis</p>
 			</article>
-			<article class="info info--logo">
-				<a class="logo logo__pre-footer" href="#"><h1>Pingbull<span>er</span></h1></a>
-				<h3 class="info__h3">Copyright 2013, Pingbull AS</h3>
-				<p class="info__text info__text--light info__text--pre-footer">Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pul- </p>
+			<article class="article article--logo article--news">
+				<a class="logo logo--news" href="#"><h1>Pingbull<span>er</span></h1></a>
+				<h3 class="article__h3 article__h3--copy">Copyright 2013, Pingbull AS</h3>
+				<p class="article__p article__p--news article__p--visible">Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pul- </p>
 			</article>
-			<article class="info info--pre-footer info--pre-footer2">
-				<a class="info__title--link" href="#"><h2 class="info__title info__title--dark info__title--left info__title--light">Recent Comments</h2></a>
-				<p class="info__text info__text--light info__text--pre-footer">Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar. Quisque urna risus, mattis pulvinar bibendum in, venenatis quis </p>
+			<article class="article article--news">
+				<a class="article__link" href="#"><h2 class="article__h2 article__h2--news">Recent Comments</h2></a>
+				<p class="article__p article__p--news article__p--visible">Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar. Quisque urna risus, mattis pulvinar bibendum in, venenatis quis </p>
 			</article>
-			<article class="info info--pre-footer info--pre-footer3">
-				<a class="info__title--link" href="#"><h2 class="info__title info__title--dark info__title--left info__title--light">News Categories</h2></a>
-				<p class="info__text info__text--light info__text--pre-footer">Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar. Quisque urna risus, mattis pulvinar bibendum in, venenatis quis</p>
+			<article class="article article--news">
+				<a class="article__link" href="#"><h2 class="article__h2 article__h2--news">News Categories</h2></a>
+				<p class="article__p article__p--news article__p--visible">Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar. Quisque urna risus, mattis pulvinar bibendum in, venenatis quis</p>
 			</article>
 		</div>
-	</div>	
-	<div class="bg-footer">
+	</aside>	
+	<div class="bg-footer wrapper">
 		<footer class="footer wrapper">
 			<nav>
-				<ul class="menu menu--footer">
-					<li class="menu__item menu__item--footer">
-						<a class="menu__link menu__link--footer footer480" href="#">Home</a>
-						<a class="menu__link menu__link--footer footer480" href="#">About</a>
-						<a class="menu__link menu__link--footer footer480" href="#">Blog</a>
-						<a class="menu__link menu__link--footer footer480" href="#">Products</a>
-						<a class="menu__link menu__link--footer footer480" href="#">Lorem Ipsum</a>
-						<a class="menu__link menu__link--footer footer480--last footer480" href="#">Dolor Sit Amet</a>
+				<ul class="menu--footer">
+					<li class="menu__item--footer">
+						<a class="menu__link--footer" href="#">Home</a>
+					</li>
+					<li class="menu__item--footer">
+						<a class="menu__link--footer" href="#">About</a>
+					</li>
+					<li class="menu__item--footer">
+						<a class="menu__link--footer" href="#">Blog</a>
+					</li>
+					<li class="menu__item--footer">
+						<a class="menu__link--footer" href="#">Products</a>
+					</li>
+					<li class="menu__item--footer">
+						<a class="menu__link--footer" href="#">Lorem Ipsum</a>
+					</li>
+					<li class="menu__item--footer">
+						<a class="menu__link--footer" href="#">Dolor Sit Amet</a>
 					</li>
 				</ul>
 			</nav>
