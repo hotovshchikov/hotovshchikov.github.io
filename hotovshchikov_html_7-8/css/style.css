@@ -427,6 +427,9 @@
   .radio__btn:checked ~ .label::before {
     background: #fff; }
 
+.radio--black .radio__btn {
+  top: 26px; }
+
 .label {
   display: flex;
   align-items: center;
