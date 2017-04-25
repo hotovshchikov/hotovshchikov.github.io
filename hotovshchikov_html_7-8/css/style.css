@@ -279,13 +279,13 @@
       .slider__preview {
         display: flex;
         align-items: center;
-        max-width: 55%;
-        max-height: 245px; } }
+        width: 55%;
+        height: 245px; } }
     @media screen and (min-width: 768px) {
       .slider__preview {
         padding-left: 1rem;
-        max-width: 40%;
-        max-height: 400px; } }
+        width: 40%;
+        height: 400px; } }
     @media screen and (min-width: 960px) {
       .slider__preview {
         padding-left: 2rem; } }
@@ -294,12 +294,12 @@
     @media screen and (min-width: 480px) {
       .slider__image {
         display: block;
-        max-width: 40%;
+        width: 40%;
         margin-right: 1rem; }
         .slider__image .slider__image--iphone {
           display: block;
           margin-top: -0.5rem;
-          max-width: 100%; } }
+          width: 95%; } }
   @media screen and (min-width: 480px) and (min-width: 768px) {
     .slider__image {
       padding-right: 3rem; } }
@@ -723,11 +723,11 @@
   @media screen and (min-width: 768px) {
     .updates-box {
       padding-top: 7rem;
-      padding-left: 5rem;
+      padding-left: 1rem;
       width: 80%; } }
   @media screen and (min-width: 960px) {
     .updates-box {
-      padding-left: 3rem;
+      padding-left: 2rem;
       width: 50%; } }
   .updates-box .article__h2 {
     text-align: left;
@@ -739,17 +739,33 @@
       .updates-box .article__h2 {
         padding-bottom: 3rem; } }
 
+.excerpt__link--updates {
+  text-align: right;
+  color: #333;
+  font-family: 'League Gothic', 'Arial', sans-serif;
+  font-weight: normal;
+  align-self: flex-end;
+  display: block;
+  padding: 1em 1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 1em; }
+  @media screen and (min-width: 480px) {
+    .excerpt__link--updates {
+      font-size: 1.2em; } }
+  @media screen and (min-width: 768px) {
+    .excerpt__link--updates {
+      margin-right: 2.5rem; } }
+  @media screen and (min-width: 960px) {
+    .excerpt__link--updates {
+      margin-right: 0; } }
+  .excerpt__link--updates:hover {
+    text-shadow: 0 0 10px #000; }
+
 .article--update {
   margin: 0 0 1.5rem 0;
-  padding: 0 0 1rem 3rem;
-  	/*.random-avatar {
-  		background: url(../img/random-avatar.png);
-  		display: block;
-  		width: 45px;
-  		height: 45px;
-  		border-radius: 50%;
-  
-  		&--1 {
+  padding: 0 0 1rem 0rem;
+  		/*&--1 {
   			position: absolute;
   			right: 273px;
   			background-position: 113px -30px;
@@ -801,8 +817,8 @@
   			@media screen and (min-width: 960px) {
   				right: 401px;
   			}
-  		}
-  	}*/ }
+  		}*/
+  /*}*/ }
   .article--update .article__list {
     list-style: none; }
   .article--update .article__item {
@@ -811,16 +827,17 @@
   .article--update .article__link {
     text-decoration: none; }
   .article--update .article__h3 {
-    padding-bottom: 0.3rem; }
-    .article--update .article__h3::before {
-      position: absolute;
-      left: -3rem;
-      display: inline-block;
-      content: '';
-      background: url(../img/random-avatar.png);
-      width: 45px;
-      height: 45px;
-      border-radius: 50%; }
+    padding-bottom: 0.3rem;
+    /*&::before {
+    	position: absolute;
+    	left: -3rem;
+    	display: inline-block;
+    	content: '';
+    	background: url(../img/random-avatar.png);
+    	width: 45px;
+    	height: 45px;
+    	border-radius: 50%;
+    };*/ }
     .article--update .article__h3 a {
       color: #333; }
   .article--update .article__p {
@@ -833,9 +850,33 @@
       .article--update .article__p {
         max-height: 100%;
         padding-top: 0; } }
+  .article--update .article--avatar {
+    display: block;
+    padding-bottom: 1.5rem; }
+    .article--update .article--avatar::after {
+      display: block;
+      clear: both;
+      content: ''; }
+    .article--update .article--avatar .random-avatar {
+      /*background: url(../img/random-avatar.png);*/
+      display: inline-block;
+      margin-right: 1rem;
+      float: left;
+      width: 45px;
+      height: 45px;
+      border-radius: 50%; }
+    .article--update .article--avatar .article__h3 {
+      display: block;
+      float: left; }
+    .article--update .article--avatar .article__p {
+      display: block;
+      float: left; }
   .article--update .excerpt__link {
     text-align: right;
     color: #333; }
+    .article--update .excerpt__link--updates {
+      text-align: right;
+      color: #333; }
     @media screen and (min-width: 480px) {
       .article--update .excerpt__link {
         font-size: 1.2em; } }
@@ -849,8 +890,9 @@
       text-shadow: 0 0 10px #000; }
 
 .bg-adv {
+  max-width: 2400px;
   margin: 0 auto;
-  padding-bottom: 3rem;
+  /*padding-bottom: 3rem;*/
   /*	min-height: 420px;
   	max-width: 320px;*/
   border-top: 1px solid #ccc;
@@ -872,7 +914,9 @@
 
 .adv {
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  width: 100%;
+  padding: 3.5rem 0; }
   @media screen and (min-width: 960px) {
     .adv {
       justify-content: center; } }
@@ -882,14 +926,32 @@
     justify-content: center; }
   .adv__item {
     display: block;
-    margin: 3.5rem 1.5rem 0 1.5rem; }
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-bottom: 1.5rem;
+    width: 38%;
+    /*margin: 3.5rem 1.5rem 0 1.5rem;*/ }
     @media screen and (min-width: 480px) {
       .adv__item {
-        margin-top: 2rem; } }
+        width: 27%;
+        /*margin-top: 2rem;*/ } }
     @media screen and (min-width: 768px) {
-      .adv__item--5 {
-        margin-left: 0;
-        margin-right: 0; } }
+      .adv__item {
+        width: 15%; } }
+    .adv__item--5 {
+      width: 48%; }
+      @media screen and (min-width: 480px) {
+        .adv__item--5 {
+          width: 32%; } }
+      @media screen and (min-width: 768px) {
+        .adv__item--5 {
+          width: 20%; } }
+      .adv__item--5 a {
+        width: 105px; }
+      @media screen and (min-width: 768px) {
+        .adv__item--5 {
+          margin-left: 0;
+          margin-right: 0; } }
   .adv__link {
     display: block;
     width: 80px;
@@ -906,7 +968,7 @@
       background-position: -130px 65px;
       transition: .2s; }
   .adv__link--3 {
-    background-position: -263px 0; }
+    background-position: -268px 0; }
     .adv__link--3:hover {
       background-position: -263px 65px;
       transition: .2s; }
