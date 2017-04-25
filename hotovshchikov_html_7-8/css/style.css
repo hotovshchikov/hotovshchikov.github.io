@@ -69,7 +69,19 @@
 
 .logo {
   display: block;
-  padding-top: 2rem; }
+  padding-top: 2rem;
+  text-transform: uppercase;
+  font-size: 3em;
+  font-family: "League Gothic", "Arial", sans-serif;
+  font-weight: normal;
+  /*
+  	h1 {
+  		text-transform: uppercase;
+  		font-size: 3em;
+  		color: #fff;
+  		font-family: $font-stack;
+  		font-weight: normal;
+  	}*/ }
   @media screen and (min-width: 768px) {
     .logo {
       padding-left: 1.85rem; } }
@@ -77,13 +89,8 @@
     .logo {
       padding-top: 1rem; } }
   .logo a {
-    text-decoration: none; }
-  .logo h1 {
-    text-transform: uppercase;
-    font-size: 3em;
-    color: #fff;
-    font-family: "League Gothic", "Arial", sans-serif;
-    font-weight: normal; }
+    text-decoration: none;
+    color: #fff; }
   .logo span {
     text-shadow: none;
     background: linear-gradient(to top, #333, #669);
@@ -91,13 +98,13 @@
     -webkit-text-fill-color: transparent; }
 
 .logo--news {
-  padding: 3rem 0 0 0;
-  text-decoration: none; }
+  padding: 0 0 0 0;
+  text-decoration: none;
+  color: #333; }
   .logo--news h2 {
     margin-bottom: 0.3rem;
     text-transform: uppercase;
     font-size: 3em;
-    color: #333;
     font-family: "League Gothic", "Arial", sans-serif;
     font-weight: normal; }
   .logo--news span {
@@ -325,6 +332,8 @@
     margin: 0;
     font-size: 2em;
     text-shadow: 0 1px 5px rgba(0, 0, 0, 0.5); }
+    .article__h1 a {
+      color: #fcf; }
     @media screen and (min-width: 768px) {
       .article__h1 {
         font-size: 3rem; } }
@@ -337,6 +346,8 @@
     font-size: 1em;
     color: #fcf;
     text-shadow: 0 1px 5px rgba(0, 0, 0, 0.5); }
+    .article__h2 a {
+      color: #fcf; }
     @media screen and (min-width: 768px) {
       .article__h2 {
         max-width: 255px;
@@ -391,26 +402,27 @@
   .article--hidden {
     display: none; } }
 
-@media screen and (min-width: 768px) {
-  .article--news {
-    max-width: 32%; } }
-@media screen and (min-width: 960px) {
-  .article--news {
-    max-width: 30%;
-    margin-right: 2%;
-    margin-left: 2%; } }
+.article--news {
+  padding-bottom: 2rem; }
+  @media screen and (min-width: 768px) {
+    .article--news {
+      max-width: 32%; } }
+  @media screen and (min-width: 960px) {
+    .article--news {
+      max-width: 30%;
+      margin-right: 2%;
+      margin-left: 2%; } }
 
 @media screen and (min-width: 480px) {
   .article__h2--news {
-    padding: 4rem 0 0.5rem 0;
     font-size: 1.5em;
     color: #333;
     text-shadow: none; } }
+.article__h2--news a {
+  color: #333; }
 @media screen and (min-width: 768px) {
   .article__h2--news {
-    padding-top: 6rem;
-    padding-bottom: 1rem;
-    line-height: 0; } }
+    line-height: 2rem; } }
 @media screen and (min-width: 960px) {
   .article__h2--news {
     font-size: 1.9rem; } }
@@ -597,38 +609,41 @@
 .article-box {
   position: relative;
   width: 100%;
+  padding: 4rem 0 1.5rem 0;
   padding-left: 10%; }
   @media screen and (min-width: 768px) {
     .article-box {
       width: 80%;
-      padding-left: 3%; } }
+      padding-left: 3%;
+      padding-top: 1rem; } }
   @media screen and (min-width: 960px) {
     .article-box {
+      padding-top: 0rem;
       width: 50%; } }
 
 .article--main {
-  margin: 4rem 0 1.5rem 0;
+  position: relative;
   padding: 1rem 2rem;
   box-shadow: 0 0 2px #ccc; }
   .article--main::before {
     display: inline-block;
     position: absolute;
-    left: 1rem;
+    left: -1.5rem;
     content: '';
     background: url(../img/avatar.png);
     width: 49px;
-    height: 49px; }
-    @media screen and (min-width: 768px) {
-      .article--main::before {
-        left: 0rem; } }
+    height: 49px;
+    /*@media screen and (min-width: 768px) {
+    	left: 0rem;
+    }*/ }
   @media screen and (min-width: 768px) {
     .article--main {
       margin-top: 6rem; } }
   .article--main .article__link {
-    text-decoration: none; }
+    text-decoration: none;
+    color: #333; }
   .article--main .article__h2 {
     font-size: 1.5em;
-    color: #333;
     text-shadow: none; }
     @media screen and (min-width: 480px) {
       .article--main .article__h2 {
@@ -703,17 +718,18 @@
   position: relative;
   display: block;
   margin: auto;
+  padding-top: 4rem;
   width: 90%; }
   @media screen and (min-width: 768px) {
     .updates-box {
-      margin-left: 5rem;
+      padding-top: 7rem;
+      padding-left: 5rem;
       width: 80%; } }
   @media screen and (min-width: 960px) {
     .updates-box {
-      margin-left: 3rem;
+      padding-left: 3rem;
       width: 50%; } }
   .updates-box .article__h2 {
-    margin: 4rem 0 0 0;
     text-align: left;
     font-size: 2em;
     color: #333;
@@ -721,7 +737,6 @@
     padding-bottom: 1rem; }
     @media screen and (min-width: 768px) {
       .updates-box .article__h2 {
-        margin-top: 7rem;
         padding-bottom: 3rem; } }
 
 .article--update {
@@ -795,7 +810,9 @@
     padding: 0 0 1rem 1rem; }
   .article--update .article__link {
     text-decoration: none; }
-    .article--update .article__link::before {
+  .article--update .article__h3 {
+    padding-bottom: 0.3rem; }
+    .article--update .article__h3::before {
       position: absolute;
       left: -3rem;
       display: inline-block;
@@ -804,12 +821,14 @@
       width: 45px;
       height: 45px;
       border-radius: 50%; }
-  .article--update .article__h3 {
-    padding-bottom: 0.3rem; }
+    .article--update .article__h3 a {
+      color: #333; }
   .article--update .article__p {
     display: block;
     max-height: 20px;
     overflow: hidden; }
+    .article--update .article__p a {
+      color: #333; }
     @media screen and (min-width: 960px) {
       .article--update .article__p {
         max-height: 100%;
@@ -852,7 +871,8 @@
   	}*/ }
 
 .adv {
-  display: flex; }
+  display: flex;
+  justify-content: center; }
   @media screen and (min-width: 960px) {
     .adv {
       justify-content: center; } }
@@ -920,13 +940,16 @@
       flex-direction: row;
       margin: auto; } }
 
-@media screen and (min-width: 480px) {
-  .news-box {
-    padding-bottom: 4rem; } }
-@media screen and (min-width: 768px) {
-  .news-box {
-    display: flex;
-    flex-direction: row; } }
+.news-box {
+  padding: 4rem 0 0.5rem 0; }
+  @media screen and (min-width: 480px) {
+    .news-box {
+      padding-bottom: 4rem; } }
+  @media screen and (min-width: 768px) {
+    .news-box {
+      padding: 6rem 0 3rem 0;
+      display: flex;
+      flex-direction: row; } }
 
 .bg-footer {
   margin: 0 auto;
