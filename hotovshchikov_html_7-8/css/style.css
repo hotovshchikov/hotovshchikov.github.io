@@ -130,7 +130,7 @@
   align-items: center;
   margin: 0;
   padding: 0;
-  border: 1px solid rgba(5, 17, 22, 0.8);
+  /*border: 1px solid rgba(5, 17, 22, 0.8);*/
   border-radius: 5px;
   overflow: hidden; }
   @media screen and (min-width: 768px) {
@@ -156,13 +156,13 @@
   	}*/ }
   @media screen and (min-width: 768px) {
     .menu {
-      position: unset;
+      position: static;
       max-width: 768px;
       visibility: visible;
       list-style: none; } }
   @media screen and (min-width: 960px) {
     .menu {
-      position: unset; } }
+      position: static; } }
   .menu:hover {
     visibility: visible; }
   .menu:hover .menu__link {
