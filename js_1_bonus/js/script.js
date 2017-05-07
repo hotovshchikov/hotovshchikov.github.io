@@ -1,8 +1,8 @@
 
 
-/*var question = prompt('What do you want to reverse?');
+var question = prompt('What do you want to reverse?');
 
-console.log(question.split('').reverse().join(''));*/ //Правильный вариант
+console.log(question.split('').reverse().join('')); //Правильный вариант
 
 /*var arr = question.split('');
 
@@ -10,20 +10,15 @@ for (i = arr.length - 1; i >= 0; i--) {
 console.log(question[i]); 
 } */ //отображает букву с новой строчки
 
-/*var str = prompt('Type anything you want.');
-
+var str = prompt('Type anything you want.');
 var arr = str.split(" ");
-
 var arrSort = arr.sort();
-
 var longestWord = arrSort[arrSort.length - 1];
-
 var arrLongestWord = [longestWord, longestWord.length];
 
-console.log(arrLongestWord);*/ //отображение массива с длинным словом и кол-вом букв в нем
+console.log(arrLongestWord); //отображение массива с длинным словом и кол-вом букв в нем
 
 var userChoice = prompt('Enter a number');
-
 
 function factorial(userChoice) {
 	if (userChoice < 0) {
