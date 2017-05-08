@@ -46,18 +46,14 @@ var userLogin = prompt("Enter your login name");
 loginSearch(userLogin);
 
 function loginSearch(userLogin){
-  for (var i = 0; i < userChoiceNames.length; i++) {
-	if (userChoiceNames[i] == userLogin) {
-		var match = userLogin;
-
-		if (match) {
-		  return console.log(userLogin + ", вы усешно вошли");
-		}else {
-		return alert("Something goes wrong! Try again!");
-		}
-	}
+  var i = 0;
+  
+  while (userChoiceNames[i] !== userLogin) {
+    i++;
+  
+  if (userChoiceNames[i] !== userLogin) {
+    return alert("Something goes wrong! Try again!");
+  }
+return console.log(userLogin + ", вы усешно вошли");
   }
 }
-
-
-
