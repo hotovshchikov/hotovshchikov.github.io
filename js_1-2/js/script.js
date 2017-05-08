@@ -31,9 +31,9 @@ return originNum;
 }*/
 
 var userChoiceNames = [];
-arrFill(userChoiceNames);
+userChoiceNames = arrFill();
 
-function arrFill(userChoiceNames){
+function arrFill(){
   for (var i = 0; i < 5; i++) {
     var name = prompt("Enter the name");
     userChoiceNames.push(name);
@@ -45,15 +45,17 @@ var userLogin = prompt("Enter your login name");
 
 loginSearch(userLogin);
 
+console.log(userLogin + ", вы усешно вошли");
+
 function loginSearch(userLogin){
   var i = 0;
   
   while (userChoiceNames[i] !== userLogin) {
     i++;
-  
-  if (userChoiceNames[i] !== userLogin) {
+
+    if (userChoiceNames[i] !== userLogin) {
     return alert("Something goes wrong! Try again!");
+    }
   }
-return console.log(userLogin + ", вы усешно вошли");
-  }
+return userLogin;
 }

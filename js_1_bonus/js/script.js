@@ -9,16 +9,18 @@ console.log(question.split('').reverse().join('')); //Правильный ва�
 for (i = arr.length - 1; i >= 0; i--) {
 console.log(question[i]); 
 } */ //отображает букву с новой строчки
-arrLongestWord();
+var arrLongestWord = [];
+arrLongestWord = LongestWord();
+console.log(arrLongestWord);
 
-function arrLongestWord(){
+function LongestWord(){
   var str = prompt('Type anything you want.');
   var arr = str.split(" ");
   var arrSort = arr.sort();
   var longestWord = arrSort[arrSort.length - 1];
   var arrLongestWord = [longestWord, longestWord.length];
 
-return console.log(arrLongestWord); //отображение массива с длинным словом и кол-вом букв в нем
+return arrLongestWord; //отображение массива с длинным словом и кол-вом букв в нем
 }
 
 var userChoice = prompt('Enter a number');
