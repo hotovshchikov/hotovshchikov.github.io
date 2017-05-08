@@ -1,12 +1,16 @@
 'use strict';
 
-var userChoiceNum = prompt("Enter a number", '');
-var userChoicePow = prompt("Enter a power", '');
+calcNumber();
 
-if (isNaN(userChoiceNum) || isNaN(userChoicePow)) {
-	console.log('lets try again');
-} else {
-	console.log("Result is", mathPow(userChoiceNum, userChoicePow));
+function calcNumber(){
+  var userChoiceNum = prompt("Enter a number", '');
+  var userChoicePow = prompt("Enter a power", '');
+
+  if (isNaN(userChoiceNum) || isNaN(userChoicePow)) {
+	return console.log('lets try again');
+  } else {
+	return console.log("Result is", mathPow(userChoiceNum, userChoicePow));
+  }
 }
 
 function mathPow(userChoiceNum, userChoicePow) {
