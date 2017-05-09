@@ -7,32 +7,32 @@ function calcNumber(){
   var userChoicePow = prompt("Enter a power", '');
 
   if (isNaN(userChoiceNum) || isNaN(userChoicePow)) {
-	  return console.log('lets try again');
+	  console.log('lets try again');
   }else if (userChoiceNum === '' || userChoicePow === ''){
-    return console.log('lets try again');
+    console.log('lets try again');
   }else {
-	  return console.log("Result is", mathPow(userChoiceNum, userChoicePow));
+	  console.log("Result is", mathPow(userChoiceNum, userChoicePow));
   }
 }
 
 function mathPow(userChoiceNum, userChoicePow) {
   	var originNum = userChoiceNum;
 
-    if (userChoiceNum > 0 || userChoicePow > 0 && userChoiceNum < 0 || userChoicePow > 0){
-      for (var i = 0; i <= userChoicePow; i++) {
+    if (userChoiceNum > 0 && userChoicePow > 0 || userChoiceNum < 0 && userChoicePow > 0 && userChoiceNum === 0 || userChoicePow > 0){
+      for (var i = 1; i < userChoicePow; i++) {
   	    originNum *= userChoiceNum;
       }
       return originNum;
-    }else if (userChoiceNum > 0 || userChoicePow < 0 && userChoiceNum < 0 || userChoicePow < 0){
-       var result = userChoicePow / userChoiceNum;
-       return result;
-      }else if (userChoiceNum === 0 || userChoicePow === 0){
-         return 0;
-        }else if (userChoiceNum <= 0 || userChoicePow === 0 && userChoiceNum > 0 || userChoicePow === 0){
-           return userChoiceNum;
-          }else if (userChoiceNum === 0 || userChoicePow <= 0 && userChoiceNum > 0 || userChoicePow > 0){
-             return userChoiceNum;
+
+    }else if (userChoiceNum > 0 && userChoicePow < 0 || userChoiceNum < 0 && userChoicePow < 0){
+            for (var b = 1; b > userChoicePow; b--) {
+            originNum *= userChoiceNum;
+            }
+            return 1 / originNum;
+
+    }else if (userChoiceNum > 0 && userChoicePow === 0 || userChoiceNum < 0 && userChoicePow === 0){
             } 
+    return 1;
 }
 
 
