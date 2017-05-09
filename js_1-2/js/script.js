@@ -18,8 +18,8 @@ function mathPow(userChoiceNum, userChoicePow) {
 
   for (var i = 1; i <= userChoicePow; i++) {
   	originNum *= userChoiceNum;
-}
-return originNum;
+  }
+  return originNum;
 }
 
 
@@ -37,8 +37,8 @@ function arrFill(){
   for (var i = 0; i < 5; i++) {
     var name = prompt("Enter the name");
     userChoiceNames.push(name);
-}
-return userChoiceNames;
+  }
+  return userChoiceNames;
 }
 
 var userLogin = prompt("Enter your login name");
