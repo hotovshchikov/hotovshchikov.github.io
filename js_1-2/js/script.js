@@ -7,19 +7,32 @@ function calcNumber(){
   var userChoicePow = prompt("Enter a power", '');
 
   if (isNaN(userChoiceNum) || isNaN(userChoicePow)) {
-	return console.log('lets try again');
-  } else {
-	return console.log("Result is", mathPow(userChoiceNum, userChoicePow));
+	  return console.log('lets try again');
+  }else if (userChoiceNum === '' || userChoicePow === ''){
+    return console.log('lets try again');
+  }else {
+	  return console.log("Result is", mathPow(userChoiceNum, userChoicePow));
   }
 }
 
 function mathPow(userChoiceNum, userChoicePow) {
   	var originNum = userChoiceNum;
 
-  for (var i = 1; i <= userChoicePow; i++) {
-  	originNum *= userChoiceNum;
-  }
-  return originNum;
+    if (userChoiceNum > 0 || userChoicePow > 0 && userChoiceNum < 0 || userChoicePow > 0){
+      for (var i = 0; i <= userChoicePow; i++) {
+  	    originNum *= userChoiceNum;
+      }
+      return originNum;
+    }else if (userChoiceNum > 0 || userChoicePow < 0 && userChoiceNum < 0 || userChoicePow < 0){
+       var result = userChoicePow / userChoiceNum;
+       return result;
+      }else if (userChoiceNum === 0 || userChoicePow === 0){
+         return 0;
+        }else if (userChoiceNum <= 0 || userChoicePow === 0 && userChoiceNum > 0 || userChoicePow === 0){
+           return userChoiceNum;
+          }else if (userChoiceNum === 0 || userChoicePow <= 0 && userChoiceNum > 0 || userChoicePow > 0){
+             return userChoiceNum;
+            } 
 }
 
 
@@ -52,5 +65,5 @@ function loginSearch(userLogin){
       return console.log(userLogin + ", вы усешно вошли");
     }
   } 
-  return alert("Something goes wrong! Try again!");
+  alert("Something goes wrong! Try again!");
 }
