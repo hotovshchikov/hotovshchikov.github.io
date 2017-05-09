@@ -48,14 +48,27 @@ loginSearch(userLogin);
 console.log(userLogin + ", вы усешно вошли");
 
 function loginSearch(userLogin){
-  var i = 0;
-  
-  while (userChoiceNames[i] !== userLogin) {
-    i++;
-
-    if (userChoiceNames[i] !== userLogin) {
-    return alert("Something goes wrong! Try again!");
+  for (var i = 0; i < 5; i++){
+    if (userChoiceNames[i] === userLogin){
+      return userChoiceNames[i];
     }
-  }
-return userLogin;
+  //  var match = userChoiceNames[i];
+  // }
+  // return match;
+
+  // if (match !== userLogin){
+  //   return alert("Something goes wrong! Try again!");
+  // }
 }
+}
+//   var i = 0;
+  
+//   while (userChoiceNames[i] !== userLogin) {
+//     i++;
+
+//     if (userChoiceNames[i] !== userLogin) {
+//     return alert("Something goes wrong! Try again!");
+//     }
+//   }
+// return userLogin;
+// }
