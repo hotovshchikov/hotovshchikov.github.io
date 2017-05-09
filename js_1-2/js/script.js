@@ -45,30 +45,12 @@ var userLogin = prompt("Enter your login name");
 
 loginSearch(userLogin);
 
-console.log(userLogin + ", вы усешно вошли");
 
 function loginSearch(userLogin){
   for (var i = 0; i < 5; i++){
     if (userChoiceNames[i] === userLogin){
-      return userChoiceNames[i];
-    }
-  //  var match = userChoiceNames[i];
-  // }
-  // return match;
-
-  // if (match !== userLogin){
-  //   return alert("Something goes wrong! Try again!");
-  // }
+      return console.log(userLogin + ", вы усешно вошли");
+  }
 }
+return alert("Something goes wrong! Try again!");
 }
-//   var i = 0;
-  
-//   while (userChoiceNames[i] !== userLogin) {
-//     i++;
-
-//     if (userChoiceNames[i] !== userLogin) {
-//     return alert("Something goes wrong! Try again!");
-//     }
-//   }
-// return userLogin;
-// }
