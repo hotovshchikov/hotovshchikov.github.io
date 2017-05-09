@@ -50,7 +50,7 @@ function loginSearch(userLogin){
   for (var i = 0; i < 5; i++){
     if (userChoiceNames[i] === userLogin){
       return console.log(userLogin + ", вы усешно вошли");
-  }
-}
-return alert("Something goes wrong! Try again!");
+    }
+  } 
+  return alert("Something goes wrong! Try again!");
 }
