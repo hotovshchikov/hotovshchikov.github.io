@@ -9,6 +9,10 @@
 
         header.classList.add('container');
 
+        var wrapper = document.querySelector('.wrapper');
+
+        wrapper.appendChild(header);
+
         var title = document.createElement('h1');
 
         title.classList.add('title');
