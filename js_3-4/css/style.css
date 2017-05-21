@@ -1,0 +1,65 @@
+.wrapper {
+  width: 40rem;
+  margin: 0 auto;
+  border: 1px solid #000; }
+
+.container {
+  display: flex;
+  justify-content: center;
+  padding: 2rem; }
+
+.title {
+  font-size: 1em;
+  font-family: Arial, sans-serif;
+  font-weight: normal; }
+
+fieldset {
+  display: inline-block;
+  padding-left: 0;
+  border: none; }
+
+.question {
+  margin: 0;
+  list-style-type: none;
+  counter-reset: num; }
+
+.numeration::before {
+  content: counter(num) ". ";
+  counter-increment: num;
+  vertical-align: top;
+  color: #000;
+  font-size: 1em;
+  font-family: Arial, sans-serif; }
+
+.answer {
+  padding: 0;
+  list-style: none; }
+
+.answer__item {
+  padding: 0.15rem;
+  font-size: 0.8em;
+  font-family: Arial, sans-serif;
+  font-weight: normal; }
+
+.submit {
+  text-align: center;
+  padding: 2rem; }
+
+.checkbox {
+  vertical-align: top;
+  cursor: pointer;
+  margin: 0 3px 0 0;
+  width: 17px;
+  height: 17px; }
+
+.checkbox + label {
+  cursor: pointer; }
+
+.submit__button {
+  cursor: pointer;
+  width: 15rem;
+  line-height: 2rem;
+  border: 2px solid #000;
+  border-radius: 3px; }
+
+/*# sourceMappingURL=style.css.map */
