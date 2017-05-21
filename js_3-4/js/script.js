@@ -15,7 +15,9 @@
 
         title.innerHTML = 'Тест по программированию';
 
-        header.appendChild(title);
+        var headerTitle = document.querySelector('.container');
+
+        headerTitle.appendChild(title);
       },
       questions: [
         {
@@ -34,5 +36,4 @@
     }
   };
   test.data.showTitle();
-
 })();
