@@ -85,6 +85,24 @@
 
             questionTitle.appendChild(question);
           },
+          showAnswerList: function() {
+            var answer = document.createElement('ul');
+
+            answer.classList.add('answer');
+
+            var answerList = document.querySelector('.title');
+
+            answerList.appendChild(answer);
+          },
+          showAnswerItem: function() {
+            var answerItem = document.createElement('li');
+
+            answerItem.classList.add('answer__item');
+
+            var answerItemList = document.querySelector('.answer');
+
+            answerItemList.appendChild(answerItem);
+          },
           showCheckbox: function() {
             var checkbox = document.createElement('input');
 
@@ -103,7 +121,7 @@
 
             answerLabel.appendChild(label);
 
-            for (var i = 0, length = this.answers.length; i = length; i++){
+            for (var i = 0, length = this.answers.length; i <= length; i++){
               label.innerHTML = this.answers[i];
             }
           }
@@ -127,7 +145,7 @@
   test.data.addQuestionItem();
   test.data.addQuestionForm();
   test.data.addQuestionFieldset();
-  test.questions[0].showQuestion();
-  test.questions[0].showCheckbox();
-  test.questions[0].showAnswer();
+  test.data.questions[0].showQuestion();
+  test.data.questions[0].showCheckbox();
+  test.data.questions[0].showAnswer();
 })();
