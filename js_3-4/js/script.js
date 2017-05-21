@@ -79,6 +79,8 @@
 
             question.classList.add('title');
 
+            question.classList.add('title--question');
+
             question.innerHTML = this.title;
 
             var questionTitle = document.querySelector('.fieldset');
@@ -90,7 +92,7 @@
 
             answer.classList.add('answer');
 
-            var answerList = document.querySelector('.title');
+            var answerList = document.querySelector('.title--question');
 
             answerList.appendChild(answer);
           },
@@ -117,12 +119,17 @@
           showAnswer: function() {
             var label = document.createElement('label');
 
-            var answerLabel = document.querySelector('.checkbox');
+            var answerLabel = document.querySelector('.answer__item');
 
             answerLabel.appendChild(label);
 
-            for (var i = 0, length = this.answers.length; i <= length; i++){
+            // label.innerHTML = this.answers[0];
+
+            for (var i = 0, length = this.answers.length; i < length; i++){
+
               label.innerHTML = this.answers[i];
+              console.log(label.innerHTML);
+
             }
           }
 
