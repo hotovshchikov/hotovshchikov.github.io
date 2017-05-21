@@ -146,6 +146,8 @@
   test.data.addQuestionForm();
   test.data.addQuestionFieldset();
   test.data.questions[0].showQuestion();
+  test.data.questions[0].showAnswerList();
+  test.data.questions[0].showAnswerItem();
   test.data.questions[0].showCheckbox();
   test.data.questions[0].showAnswer();
 })();
