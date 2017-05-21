@@ -1,0 +1,12 @@
+ .red {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width:500px;
+   height:500px;
+   background: red;
+ }
+.text {
+  display:block;
+  background: yellow;
+}
