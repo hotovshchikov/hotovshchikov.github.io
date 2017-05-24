@@ -2,137 +2,76 @@
   'use strict';
 
   var test = {
-    addHeader: function() {
+    createTest: function() {
       var header = document.createElement('header');
+      var title = document.createElement('h1');
 
-      header.classList.add('container');
+      title.innerHTML = test.data.title;
 
-      var wrapper = document.querySelector('.wrapper');
+      header.appendChild(title);
 
-      wrapper.appendChild(header);
-    },
-    data: {
-      title: 'Тест по какой-то теме',
-      showTitle: function() {
-        var title = document.createElement('h1');
+      document.body.appendChild(header);
 
-        title.classList.add('title');
+      var main = document.createElement('main');
+      var ol = document.createElement('ol');
 
-        title.innerHTML = 'Тест по программированию';
+      main.appendChild(ol);
 
-        var headerTitle = document.querySelector('.container');
+      for (var i = 0, length = test.data.questions.length; i < length; i++){
 
-        headerTitle.appendChild(title);
-      },
-      addMain: function() {
-        var main = document.createElement('main');
-
-        main.classList.add('main');
-
-        var mainBox = document.querySelector('.wrapper');
-
-        mainBox.appendChild(main);
-      },
-      addQuestionField: function() {
-        var ol = document.createElement('ol');
-
-        ol.classList.add('question');
-
-        var questionBox = document.querySelector('.main');
-
-        questionBox.appendChild(ol);
-      },
-      addQuestionItem: function() {
         var li = document.createElement('li');
 
-        li.classList.add('question__item');
+        ol.appendChild(li);
 
-        var questionBoxItem = document.querySelector('.question');
-
-        questionBoxItem.appendChild(li);
-      },
-      addQuestionForm: function() {
         var form = document.createElement('form');
 
-        form.classList.add('numeration');
+        li.appendChild(form);
 
-        var questionBoxForm = document.querySelector('.question__item');
-
-        questionBoxForm.appendChild(form);
-      },
-      addQuestionFieldset: function() {
         var fieldset = document.createElement('fieldset');
 
-        fieldset.classList.add('fieldset');
+        form.appendChild(fieldset);
 
-        var questionFieldset = document.querySelector('.numeration');
+        var legend = document.createElement('legend');
 
-        questionFieldset.appendChild(fieldset);
-      },
+        legend.innerHTML = test.data.questions[i].title;
+
+        fieldset.appendChild(legend);
+
+        var ul = document.createElement('ul');
+
+        legend.appendChild(ul);
+
+        for (var a = 0, answerLength = test.data.questions[i].answers.length; a < answerLength; a++){
+          var answer = document.createElement('li');
+
+          ul.appendChild(answer);
+
+          var checkbox = document.createElement('input');
+
+          checkbox.setAttribute('type', 'checkbox');
+
+          answer.appendChild(checkbox);
+
+          var label = document.createElement('label');
+
+          label.innerHTML = test.data.questions[i].answers[a];
+
+          answer.appendChild(label);
+      }
+
+      }
+
+
+      document.body.appendChild(main);
+    },
+
+    data: {
+      title: 'Тест по какой-то теме',
 
       questions: [
         {
           title: 'Вопрос #1',
           answers: ['Вариант овтета 1', 'Вариант овтета 2', 'Вариант овтета 3'],
-          showQuestion: function() {
-            var question = document.createElement('legend');
-
-            question.classList.add('title');
-
-            question.classList.add('title--question');
-
-            question.innerHTML = this.title;
-
-            var questionTitle = document.querySelector('.fieldset');
-
-            questionTitle.appendChild(question);
-          },
-          showAnswerList: function() {
-            var answer = document.createElement('ul');
-
-            answer.classList.add('answer');
-
-            var answerList = document.querySelector('.title--question');
-
-            answerList.appendChild(answer);
-          },
-          showAnswerItem: function() {
-            var answerItem = document.createElement('li');
-
-            answerItem.classList.add('answer__item');
-
-            var answerItemList = document.querySelector('.answer');
-
-            answerItemList.appendChild(answerItem);
-          },
-          showCheckbox: function() {
-            var checkbox = document.createElement('input');
-
-            checkbox.setAttribute('type', 'checkbox');
-
-            checkbox.classList.add('checkbox');
-
-            var answerCheckbox = document.querySelector('.answer__item');
-
-            answerCheckbox.appendChild(checkbox);
-          },
-          showAnswer: function() {
-            var label = document.createElement('label');
-
-            var answerLabel = document.querySelector('.answer__item');
-
-            answerLabel.appendChild(label);
-
-            // label.innerHTML = this.answers[0];
-
-            for (var i = 0, length = this.answers.length; i < length; i++){
-
-              label.innerHTML = this.answers[i];
-              console.log(label.innerHTML);
-
-            }
-          }
-
         },
         {
           title: 'Вопрос #2',
@@ -145,16 +84,5 @@
       ]
     }
   };
-  test.addHeader();
-  test.data.showTitle();
-  test.data.addMain();
-  test.data.addQuestionField();
-  test.data.addQuestionItem();
-  test.data.addQuestionForm();
-  test.data.addQuestionFieldset();
-  test.data.questions[0].showQuestion();
-  test.data.questions[0].showAnswerList();
-  test.data.questions[0].showAnswerItem();
-  test.data.questions[0].showCheckbox();
-  test.data.questions[0].showAnswer();
+  test.createTest();
 })();
