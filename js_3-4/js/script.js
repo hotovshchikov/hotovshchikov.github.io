@@ -64,6 +64,8 @@
 
       submit.setAttribute('type', 'submit');
 
+      submit.setAttribute('value', 'Проверить мои результаты')
+
       main.appendChild(submit);
 
 
