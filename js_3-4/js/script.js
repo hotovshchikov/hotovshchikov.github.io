@@ -60,6 +60,11 @@
       }
 
       }
+      var submit = document.createElement('input');
+
+      submit.setAttribute('type', 'submit');
+
+      main.appendChild(submit);
 
 
       document.body.appendChild(main);
