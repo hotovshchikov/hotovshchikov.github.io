@@ -3,37 +3,37 @@
 
   var test = {
     createTest: function() {
-      var header = document.createElement('header');
-      var title = document.createElement('h1');
-
-      title.innerHTML = test.data.title;
-
-      header.appendChild(title);
-
-      document.body.appendChild(header);
+      // var header = document.createElement('header');
 
       var main = document.createElement('main');
+      var form = document.createElement('form');
+
+      main.appendChild(form);
+
+      var title = document.createElement('h1');
+
+      title.innerHTML = this.data.title;
+
+      form.appendChild(title);
+
       var ol = document.createElement('ol');
 
-      main.appendChild(ol);
+      form.appendChild(ol);
 
-      for (var i = 0, length = test.data.questions.length; i < length; i++){
+      for (var i = 0, length = this.data.questions.length; i < length; i++){
 
         var li = document.createElement('li');
 
         ol.appendChild(li);
 
-        var form = document.createElement('form');
-
-        li.appendChild(form);
 
         var fieldset = document.createElement('fieldset');
 
-        form.appendChild(fieldset);
+        li.appendChild(fieldset);
 
         var legend = document.createElement('legend');
 
-        legend.innerHTML = test.data.questions[i].title;
+        legend.innerHTML = this.data.questions[i].title;
 
         fieldset.appendChild(legend);
 
@@ -41,7 +41,7 @@
 
         legend.appendChild(ul);
 
-        for (var a = 0, answerLength = test.data.questions[i].answers.length; a < answerLength; a++){
+        for (var a = 0, answerLength = this.data.questions[i].answers.length; a < answerLength; a++){
           var answer = document.createElement('li');
 
           ul.appendChild(answer);
@@ -54,7 +54,7 @@
 
           var label = document.createElement('label');
 
-          label.innerHTML = test.data.questions[i].answers[a];
+          label.innerHTML = this.data.questions[i].answers[a];
 
           answer.appendChild(label);
       }
@@ -64,12 +64,12 @@
 
       submit.setAttribute('type', 'submit');
 
-      submit.setAttribute('value', 'Проверить мои результаты')
+      submit.setAttribute('value', 'Проверить мои результаты');
 
-      main.appendChild(submit);
+      form.appendChild(submit);
 
-
-      document.body.appendChild(main);
+      var root = document.getElementById('root');
+      root.appendChild(main);
     },
 
     data: {
