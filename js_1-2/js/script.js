@@ -31,7 +31,7 @@ function mathPow(userChoiceNum, userChoicePow) {
             return 1 / originNum;
 
     }else if (userChoiceNum > 0 && userChoicePow === 0 || userChoiceNum < 0 && userChoicePow === 0){
-            } 
+            }
     return 1;
 }
 
@@ -39,7 +39,7 @@ function mathPow(userChoiceNum, userChoicePow) {
 /*function mathPow() {
 
   var result = Math.pow(userChoiceNum, userChoicePow);
-  
+
   return result;
 }*/
 
@@ -64,6 +64,6 @@ function loginSearch(userLogin){
     if (userChoiceNames[i] === userLogin){
       return console.log(userLogin + ", вы усешно вошли");
     }
-  } 
+  }
   alert("Something goes wrong! Try again!");
 }
