@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  margin: 0 auto;
+  min-width: 20rem;
+  /*max-width: 60rem;*/
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.bg-main {
+  background: url(../img/beach-cool-wallpaper-hd_1.jpg);
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+.registration {
+  display: block;
+  margin-top: 30px;
+  width: 20rem;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.regField {
+  padding: 0.3rem;
+  margin: 0.4rem;
+}
+
+.regTitle {
+  display: block;
+  padding: 1.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1em;
+  font-family: Arial, sans-serif;
+}
+
+fieldset {
+  position: relative;
+  text-align: center;
+  border: none;
+}
+
+.regButton {
+  margin: 1.7rem;
+  padding: 0.3rem;
+  background: linear-gradient(to top, #00b3ff, #66ccff);
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  border-radius: 16px;
+  border: none;
+  box-shadow: 0 1px 10px #000;
+}
+
+p {
+  display: none;
+  padding: 7px;
+  font-size: 0.8em;
+  position: absolute;
+  left:250px;
+  width: 215px;
+  background: rgba(110, 190, 200, 0.5);
+  border-radius: 16px;
+}
+
+.regHelpLogin {
+  top: 73px;
+}
+
+.regHelpPas {
+top: 116px;
+}
+
+.regHelpConf {
+  top: 159px;
+}
+
+.regHelpEmail {
+  top: 202px;
+}
+
+.panel {
+  padding: 10px;
+  border-radius: 16px;
+  border: none;
+  background: linear-gradient(to top, #00b3ff, #66ccff);
+  box-shadow: 0 1px 10px #fff;
+}
+
+.panel:hover {
+  background: #1883ba;
+}
+
+.panel:focus {
+  background: #1883ba;
+}
+
+#tabs {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 20px 0 0 0;
+  width: 20rem;
+}
+.tabs-container{
+  margin-top: 8px;
+  padding: 20px;
+  border: 1px solid #00b3ff;
+}
+.tabs-navigation{
+  margin: 0;
+  height: 20px;
+}
+.tabs-navigation li{
+  float: left;
+  list-style: none;
+}
+.tabs-navigation li a{
+  display: block;
+  text-decoration: none;
+  margin: 0 5px 0 0;
+  padding: 5px 10px;
+  color: #fff;
+  font-size: 14px;
+  font-family: arial, sans-serif;
+  border: 1px solid #00b3ff
+}
+.tabs-navigation li.selected a, .tabs-navigation li:hover a{
+  color: #000;
+  background: linear-gradient(to top, #00b3ff, #66ccff);
+}
+
+.tabs-box {
+  color: #fff;
+  font-family: arial, sans-serif;
+}
