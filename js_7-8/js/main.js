@@ -29,5 +29,12 @@ $(document).ready(function () {
       return false;
     }).filter(':first').click();
 
+    $('.link').focus(function () {
+      tabContainers.hide();
+      tabContainers.filter(this.hash).show();
+      $('.link').parent('li').removeClass('selected');
+      $(this).parent('li').addClass('selected');
+    });
+
 
 });
