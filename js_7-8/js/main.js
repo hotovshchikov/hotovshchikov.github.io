@@ -1,9 +1,14 @@
-(function () {
+$(document).ready(function () {
+
   'use strict';
 
   $('.regField').hover(function() {
-    $(this).next().animate({opacity: "show", left: "260"}, "slow");
+    $(this).next().stop().animate({opacity: "show", left: "260"}, "slow");
   }, function() {
+    $(this).next().stop().animate({opacity: "hide", left: "250"}, "fast");
+  }). focus(function () {
+    $(this).next().animate({opacity: "show", left: "260"}, "slow");
+  }).blur(function () {
     $(this).next().animate({opacity: "hide", left: "250"}, "fast");
   });
 
@@ -25,4 +30,4 @@
     }).filter(':first').click();
 
 
-})();
+});

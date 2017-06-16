@@ -63,6 +63,11 @@ fieldset {
   box-shadow: 0 1px 10px #000;
 }
 
+.regButton:hover,
+.regButton:focus {
+  background: #1883ba;
+}
+
 p {
   display: none;
   padding: 7px;
@@ -98,11 +103,8 @@ top: 116px;
   box-shadow: 0 1px 10px #fff;
 }
 
-.panel:hover {
-  background: #1883ba;
-}
-
-.panel:focus {
+.panel:hover,
+.panel:focus{
   background: #1883ba;
 }
 
