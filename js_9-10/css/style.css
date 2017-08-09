@@ -13,12 +13,12 @@ a {
   align-items: center;
 }
 
-.menu_item {
+.menu_list {
   display: flex;
   list-style: none;
 }
 
-.menu_list {
+.menu_item {
   display: block;
   position: relative;
   padding: 1rem;
@@ -27,7 +27,7 @@ a {
   background: rgba(50, 120, 130, 0.5);
 }
 
-.sub-menu-li {
+.sub_menu_li {
   display: block;
   padding: 1rem;
   margin: 0 1rem;
@@ -35,7 +35,7 @@ a {
   background: rgba(255, 255, 255, 0.5);
 }
 
-.sub-menu {
+.sub_menu {
   display: none;
   list-style: none;
   position: absolute;
@@ -44,12 +44,12 @@ a {
   z-index: 1;
 }
 
-.sub-sub-menu {
+.sub_sub_menu {
   left: 55px;
   top: 0;
 }
 
-.sub-menu-link {
+.sub_menu_link {
   display: block;
   padding: 10px 5px;
   transition: 400ms;

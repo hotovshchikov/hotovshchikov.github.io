@@ -35,9 +35,9 @@ $(function() {
     // =================MENU===================
     $(document).ready(function() {
         $('.dropdown').hover(function() {
-            $(this).children('.sub-menu').slideDown(400);
+            $(this).stop().children('.sub_menu').stop(true, true).slideDown(400);
         }, function() {
-            $(this).children('.sub-menu').slideUp(400);
+            $(this).stop().children('.sub_menu').stop(true, true).slideUp(400);
         });
     });
 });
