@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-hider {
+    display: flex;
+    margin: 10rem 0;
+    width: 600px;
+    overflow: hidden;
+}
+
+i {
+    cursor: pointer;
+}
+
+i:hover,
+i:focus {
+    color: #5f9ea0;
+}
+
+.carousel-list {
+    display: flex;
+    position: relative;
+    list-style: none;
+    width: 10000px;
+}
+
+.carousel-element {
+    display: block;
+    text-align: center;
+    margin-right: 25px;
+}
+
+.carousel-element img {
+    max-width: 600px;
+}

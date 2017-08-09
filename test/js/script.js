@@ -1,15 +1,10 @@
-var first = document.createElement('div');
+(function () {
+  'use strict';
 
-first.classList.add('red');
-
-document.body.appendChild(first);
-
-var second = document.createElement('p');
-
-second.classList.add('text');
-
-second.innerHTML = 'some text';
-
-var box = document.querySelector('.red');
-
-box.appendChild(second);
+  var arr = [1, 2, 3, 4 ,5];
+  var newArr = [];
+  _.forEach(arr, function (item) {
+    newArr.push(item * 2);
+  });
+  console.log('newArr: ', newArr);
+})();

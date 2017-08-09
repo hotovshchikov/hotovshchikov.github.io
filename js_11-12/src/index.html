@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="./js/slider.js"></script>
+    <script src="./js/template.js"></script>
+    <script src="./js/script.js"></script>
+    <link rel="stylesheet" href="./fonts/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Carousel</title>
+</head>
+<body>
+<script type="text/html" id="slider">
+    <div class="wrapper">
+        <i class="fa fa-arrow-left fa-2x carousel-arrow-left" aria-hidden="true"></i>
+        <div class="carousel-hider">
+            <ul class="carousel-list">
+                <% for ( var i = 0; i < data.length; i++ ) { %>
+                <li class="carousel-element">
+                    <img src="<%= data[i].img %>" alt="img">
+                    <p><%= data[i].title %></p>
+                </li>
+                <% } %>
+            </ul>
+        </div>
+        <i class="fa fa-arrow-right fa-2x carousel-arrow-right" aria-hidden="true"></i>
+    </div>
+</script>
+</body>
+</html>
