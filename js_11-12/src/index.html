@@ -20,10 +20,12 @@
     <i class="fa fa-arrow-right fa-2x carousel-arrow-right" aria-hidden="true"></i>
 </div>
 <script id="slider" type="text/template">
+    <% _.forEach(data, function(item) { %>
         <li class="carousel-element">
-            <img src=<%- img %> alt="img">
-            <p><%- title %></p>
+            <img src=<%- item.img %> alt="img">
+            <p><%- item.title %></p>
         </li>
+   <% }); %>
 </script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.js"></script>

@@ -70,9 +70,8 @@
     var html = document.getElementById('slider').textContent,
 
         template = _.template(html);
-    _.forEach(data, function (item) {
-        parent.innerHTML += template(item);
-    })
+
+    parent.innerHTML += template({data: data});
 })();
 
 $(function () {
