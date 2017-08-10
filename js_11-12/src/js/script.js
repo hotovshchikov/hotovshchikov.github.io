@@ -1,5 +1,6 @@
-$(function () {
-    var slider = $('#slider').html();
+(function () {
+    'use strict';
+
     var data = [
         {
             img: './img/look.com.ua-114508.jpg',
@@ -61,14 +62,18 @@ $(function () {
             img: './img/look.com.ua-114676.jpg',
             title: 'Описание 15'
         }
+    ],
 
-    ];
-    var content = tmpl(slider,{
-        data: data
-    });
+    parent = document.getElementById('slider-list');
 
-    $('body').append(content);
-})
+
+    var html = document.getElementById('slider').textContent,
+
+        template = _.template(html);
+    _.forEach(data, function (item) {
+        parent.innerHTML += template(item);
+    })
+})();
 
 $(function () {
     $('.carousel-list').slider();
