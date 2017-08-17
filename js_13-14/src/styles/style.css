@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+form {
+    display: none;
+}
+
+.wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.reg_form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.reg_title {
+    display: block;
+    margin: 1em;
+    font-size: 1rem;
+    font-family: Arial, sans-serif;
+}
+
+.reg_input {
+    margin: 1em;
+    width: 200px;
+    height: 30px;
+}
+
+.q_form {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+    width: 300px;
+}
+
+.checkbox_input {
+    margin: 1em;
+    height: 30px;
+    width: 30px;
+}
+
+.question_title {
+    display: block;
+    width: 300px;
+    align-self: flex-start;
+    text-align: center;
+    line-height: 2rem;
+    font-size: 1rem;
+    font-family: Arial, sans-serif;
+    background: #ff0;
+
+}
+
+.question_item {
+    display: flex;
+    align-items: center;
+}
+
+.modal_overlay {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.modal_window {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    height: 100px;
+    background: #fff;
+}
+
+.modal_title {
+    display: block;
+    margin: 1rem 1rem 2rem 1rem;
+    font-size: 1em;
+    font-family: Arial, sans-serif;
+}
